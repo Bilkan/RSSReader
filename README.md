@@ -7,6 +7,6 @@ RSS Reader designed to read news from Uyghur websites and blogs. You can manage 
 
 Download Link:
 
-Google Play:
+Google Play: https://play.google.com/store/apps/details?id=net.uyghurdev.avaroid.rssreader
 
 Bilkan Bazar: http://bazar.bilkan.net/App.aspx?id=89
