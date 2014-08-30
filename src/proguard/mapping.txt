@@ -1,0 +1,1292 @@
+com.google.analytics.tracking.android.AdHitIdGenerator -> com.google.a.a.a.a:
+    boolean mAdMobSdkInstalled -> a
+    int getAdHitId() -> a
+com.google.analytics.tracking.android.AdMobInfo -> com.google.a.a.a.b:
+    com.google.analytics.tracking.android.AdMobInfo INSTANCE -> a
+    int mAdHitId -> b
+    java.util.Random mRandom -> c
+    com.google.analytics.tracking.android.AdMobInfo getInstance() -> a
+    int generateAdHitId() -> b
+com.google.analytics.tracking.android.AnalyticsClient -> com.google.a.a.a.c:
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+    void connect() -> b
+    void disconnect() -> c
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient -> com.google.a.a.a.d:
+    android.content.ServiceConnection mConnection -> a
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectedListener mOnConnectedListener -> b
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectionFailedListener mOnConnectionFailedListener -> c
+    android.content.Context mContext -> d
+    com.google.android.gms.analytics.internal.IAnalyticsService mService -> e
+    void connect() -> b
+    void disconnect() -> c
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+    com.google.android.gms.analytics.internal.IAnalyticsService getService() -> f
+    void checkConnected() -> d
+    boolean isConnected() -> e
+    void onServiceBound() -> g
+    void onConnectionSuccess() -> h
+    com.google.android.gms.analytics.internal.IAnalyticsService access$002(com.google.analytics.tracking.android.AnalyticsGmsCoreClient,com.google.android.gms.analytics.internal.IAnalyticsService) -> a
+    void access$100(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> a
+    android.content.Context access$200(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> b
+    android.content.ServiceConnection access$302(com.google.analytics.tracking.android.AnalyticsGmsCoreClient,android.content.ServiceConnection) -> a
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectionFailedListener access$400(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> c
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectedListener access$500(com.google.analytics.tracking.android.AnalyticsGmsCoreClient) -> d
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient$AnalyticsServiceConnection -> com.google.a.a.a.e:
+    com.google.analytics.tracking.android.AnalyticsGmsCoreClient this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectedListener -> com.google.a.a.a.f:
+    void onConnected() -> a
+    void onDisconnected() -> b
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient$OnConnectionFailedListener -> com.google.a.a.a.g:
+    void onConnectionFailed(int,android.content.Intent) -> a
+com.google.analytics.tracking.android.AnalyticsStore -> com.google.a.a.a.h:
+    void putHit(java.util.Map,long,java.lang.String,java.util.Collection) -> a
+    void clearHits(long) -> a
+    void dispatch() -> a
+com.google.analytics.tracking.android.AnalyticsStoreStateListener -> com.google.a.a.a.i:
+    void reportStoreIsEmpty(boolean) -> a
+com.google.analytics.tracking.android.AnalyticsThread -> com.google.a.a.a.j:
+    void sendHit(java.util.Map) -> a
+    void dispatch() -> a
+    void requestAppOptOut(com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback) -> a
+    void requestClientId(com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback) -> a
+    java.util.concurrent.LinkedBlockingQueue getQueue() -> b
+    java.lang.Thread getThread() -> c
+com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback -> com.google.a.a.a.k:
+    void reportClientId(java.lang.String) -> a
+com.google.analytics.tracking.android.Clock -> com.google.a.a.a.l:
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.Dispatcher -> com.google.a.a.a.m:
+    int dispatchHits(java.util.List) -> a
+    boolean okToDispatch() -> a
+com.google.analytics.tracking.android.ExceptionParser -> com.google.a.a.a.n:
+    java.lang.String getDescription(java.lang.String,java.lang.Throwable) -> a
+com.google.analytics.tracking.android.FutureApis -> com.google.a.a.a.o:
+    int version() -> a
+    boolean setOwnerOnlyReadWrite(java.lang.String) -> a
+com.google.analytics.tracking.android.GANetworkReceiver -> com.google.a.a.a.p:
+    com.google.analytics.tracking.android.ServiceManager mManager -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.google.analytics.tracking.android.GAServiceManager -> com.google.a.a.a.q:
+    java.lang.Object MSG_OBJECT -> a
+    android.content.Context ctx -> b
+    com.google.analytics.tracking.android.AnalyticsStore store -> c
+    com.google.analytics.tracking.android.AnalyticsThread thread -> d
+    int dispatchPeriodInSeconds -> e
+    boolean pendingDispatch -> f
+    boolean connected -> g
+    boolean listenForNetwork -> h
+    com.google.analytics.tracking.android.AnalyticsStoreStateListener listener -> i
+    android.os.Handler handler -> j
+    com.google.analytics.tracking.android.GANetworkReceiver networkReceiver -> k
+    boolean storeIsEmpty -> l
+    com.google.analytics.tracking.android.GAServiceManager instance -> m
+    com.google.analytics.tracking.android.GAServiceManager getInstance() -> a
+    void initializeNetworkReceiver() -> e
+    void initializeHandler() -> f
+    void initialize(android.content.Context,com.google.analytics.tracking.android.AnalyticsThread) -> a
+    com.google.analytics.tracking.android.AnalyticsStore getStore() -> b
+    void dispatch() -> c
+    void setDispatchPeriod(int) -> a
+    void updatePowerSaveMode(boolean,boolean) -> a
+    void updateConnectivityStatus(boolean) -> a
+    boolean access$000(com.google.analytics.tracking.android.GAServiceManager) -> a
+    java.lang.Object access$100() -> d
+    int access$200(com.google.analytics.tracking.android.GAServiceManager) -> b
+    boolean access$300(com.google.analytics.tracking.android.GAServiceManager) -> c
+    android.os.Handler access$400(com.google.analytics.tracking.android.GAServiceManager) -> d
+com.google.analytics.tracking.android.GAServiceManager$1 -> com.google.a.a.a.r:
+    com.google.analytics.tracking.android.GAServiceManager this$0 -> a
+    void reportStoreIsEmpty(boolean) -> a
+com.google.analytics.tracking.android.GAServiceManager$2 -> com.google.a.a.a.s:
+    com.google.analytics.tracking.android.GAServiceManager this$0 -> a
+    boolean handleMessage(android.os.Message) -> handleMessage
+com.google.analytics.tracking.android.GAServiceProxy -> com.google.a.a.a.t:
+    long lastRequestTime -> a
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState state -> b
+    com.google.analytics.tracking.android.AnalyticsClient client -> c
+    com.google.analytics.tracking.android.AnalyticsStore store -> d
+    com.google.analytics.tracking.android.AnalyticsStore testStore -> e
+    com.google.analytics.tracking.android.AnalyticsThread thread -> f
+    android.content.Context ctx -> g
+    java.util.Queue queue -> h
+    int connectTries -> i
+    java.util.Timer reConnectTimer -> j
+    java.util.Timer failedConnectTimer -> k
+    java.util.Timer disconnectCheckTimer -> l
+    boolean pendingDispatch -> m
+    boolean pendingClearHits -> n
+    com.google.analytics.tracking.android.Clock clock -> o
+    long idleTimeout -> p
+    void putHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void dispatch() -> c
+    void clearHits() -> d
+    java.util.Timer cancelTimer(java.util.Timer) -> a
+    void clearAllTimers() -> f
+    void createService() -> e
+    void sendQueue() -> g
+    void dispatchToStore() -> h
+    void useStore() -> i
+    void connectToService() -> j
+    void disconnectFromService() -> k
+    void onConnected() -> a
+    void onDisconnected() -> b
+    void onConnectionFailed(int,android.content.Intent) -> a
+    void fireReconnectAttempt() -> l
+    void access$000(com.google.analytics.tracking.android.GAServiceProxy) -> a
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState access$400(com.google.analytics.tracking.android.GAServiceProxy) -> b
+    void access$500(com.google.analytics.tracking.android.GAServiceProxy) -> c
+    void access$600(com.google.analytics.tracking.android.GAServiceProxy) -> d
+    java.util.Queue access$700(com.google.analytics.tracking.android.GAServiceProxy) -> e
+    long access$800(com.google.analytics.tracking.android.GAServiceProxy) -> f
+    long access$900(com.google.analytics.tracking.android.GAServiceProxy) -> g
+    com.google.analytics.tracking.android.Clock access$1000(com.google.analytics.tracking.android.GAServiceProxy) -> h
+    void access$1100(com.google.analytics.tracking.android.GAServiceProxy) -> i
+    java.util.Timer access$1200(com.google.analytics.tracking.android.GAServiceProxy) -> j
+com.google.analytics.tracking.android.GAServiceProxy$1 -> com.google.a.a.a.u:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.GAServiceProxy$2 -> com.google.a.a.a.v:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAServiceProxy$3 -> com.google.a.a.a.w:
+    int[] $SwitchMap$com$google$analytics$tracking$android$GAServiceProxy$ConnectState -> a
+com.google.analytics.tracking.android.GAServiceProxy$ConnectState -> com.google.a.a.a.x:
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState CONNECTING -> a
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState CONNECTED_SERVICE -> b
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState CONNECTED_LOCAL -> c
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState BLOCKED -> d
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState PENDING_CONNECTION -> e
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState PENDING_DISCONNECT -> f
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState DISCONNECTED -> g
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState[] $VALUES -> h
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState[] values() -> values
+    com.google.analytics.tracking.android.GAServiceProxy$ConnectState valueOf(java.lang.String) -> valueOf
+com.google.analytics.tracking.android.GAServiceProxy$DisconnectCheckTask -> com.google.a.a.a.y:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAServiceProxy$FailedConnectTask -> com.google.a.a.a.z:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAServiceProxy$HitParams -> com.google.a.a.a.aa:
+    java.util.Map wireFormatParams -> a
+    long hitTimeInMilliseconds -> b
+    java.lang.String path -> c
+    java.util.List commands -> d
+    java.util.Map getWireFormatParams() -> a
+    long getHitTimeInMilliseconds() -> b
+    java.lang.String getPath() -> c
+    java.util.List getCommands() -> d
+com.google.analytics.tracking.android.GAServiceProxy$ReconnectTask -> com.google.a.a.a.ab:
+    com.google.analytics.tracking.android.GAServiceProxy this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAThread -> com.google.a.a.a.ac:
+    java.util.concurrent.LinkedBlockingQueue queue -> a
+    boolean mDisabled -> b
+    boolean mClosed -> c
+    boolean mAppOptOut -> d
+    java.util.List mCommands -> e
+    com.google.analytics.tracking.android.MetaModel mMetaModel -> f
+    java.lang.String mInstallCampaign -> g
+    java.lang.String mClientId -> h
+    com.google.analytics.tracking.android.GAThread sInstance -> i
+    com.google.analytics.tracking.android.ServiceProxy mServiceProxy -> j
+    android.content.Context mContext -> k
+    com.google.analytics.tracking.android.GAThread getInstance(android.content.Context) -> a
+    void init() -> e
+    void sendHit(java.util.Map) -> a
+    java.lang.String getHostUrl(java.util.Map) -> b
+    void fillExceptionParameters(java.util.Map) -> c
+    boolean isSampledOut(java.util.Map) -> d
+    void fillAppParameters(java.util.Map) -> e
+    void putIfAbsent(java.util.Map,java.lang.String,java.lang.String) -> a
+    void fillCampaignParameters(java.util.Map) -> f
+    void dispatch() -> a
+    void requestAppOptOut(com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback) -> a
+    void requestClientId(com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback) -> a
+    void queueToThread(java.lang.Runnable) -> a
+    boolean loadAppOptOut() -> f
+    boolean storeClientId(java.lang.String) -> a
+    java.lang.String generateClientId() -> g
+    java.lang.String initializeClientId() -> d
+    java.lang.String getAndClearCampaign(android.content.Context) -> b
+    java.lang.String printStackTrace(java.lang.Throwable) -> a
+    void run() -> run
+    java.util.concurrent.LinkedBlockingQueue getQueue() -> b
+    java.lang.Thread getThread() -> c
+    java.lang.String access$000(com.google.analytics.tracking.android.GAThread) -> a
+    boolean access$100(com.google.analytics.tracking.android.GAThread) -> b
+    boolean access$200(com.google.analytics.tracking.android.GAThread,java.util.Map) -> a
+    java.lang.String access$300(com.google.analytics.tracking.android.GAThread) -> c
+    java.lang.String access$302(com.google.analytics.tracking.android.GAThread,java.lang.String) -> a
+    void access$400(com.google.analytics.tracking.android.GAThread,java.util.Map) -> b
+    void access$500(com.google.analytics.tracking.android.GAThread,java.util.Map) -> c
+    void access$600(com.google.analytics.tracking.android.GAThread,java.util.Map) -> d
+    com.google.analytics.tracking.android.MetaModel access$700(com.google.analytics.tracking.android.GAThread) -> d
+    java.lang.String access$800(com.google.analytics.tracking.android.GAThread,java.util.Map) -> e
+    java.util.List access$900(com.google.analytics.tracking.android.GAThread) -> e
+    com.google.analytics.tracking.android.ServiceProxy access$1000(com.google.analytics.tracking.android.GAThread) -> f
+com.google.analytics.tracking.android.GAThread$1 -> com.google.a.a.a.ad:
+    java.util.Map val$hitCopy -> a
+    long val$hitTime -> b
+    com.google.analytics.tracking.android.GAThread this$0 -> c
+    void run() -> run
+com.google.analytics.tracking.android.GAThread$2 -> com.google.a.a.a.ae:
+    com.google.analytics.tracking.android.GAThread this$0 -> a
+    void run() -> run
+com.google.analytics.tracking.android.GAThread$4 -> com.google.a.a.a.af:
+    com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback val$callback -> a
+    com.google.analytics.tracking.android.GAThread this$0 -> b
+    void run() -> run
+com.google.analytics.tracking.android.GAThread$5 -> com.google.a.a.a.ag:
+    com.google.analytics.tracking.android.AnalyticsThread$ClientIdCallback val$callback -> a
+    com.google.analytics.tracking.android.GAThread this$0 -> b
+    void run() -> run
+com.google.analytics.tracking.android.GAUsage -> com.google.a.a.a.ah:
+    java.util.SortedSet mUsedFields -> a
+    java.lang.StringBuilder mSequence -> b
+    boolean mDisableUsage -> c
+    com.google.analytics.tracking.android.GAUsage INSTANCE -> d
+    com.google.analytics.tracking.android.GAUsage getInstance() -> a
+    void setDisableUsage(boolean) -> a
+    void setUsage(com.google.analytics.tracking.android.GAUsage$Field) -> a
+    java.lang.String getAndClearUsage() -> b
+    java.lang.String getAndClearSequence() -> c
+com.google.analytics.tracking.android.GAUsage$Field -> com.google.a.a.a.ai:
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_VIEW -> a
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_VIEW_WITH_APPSCREEN -> b
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_EVENT -> c
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_TRANSACTION -> d
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_EXCEPTION_WITH_DESCRIPTION -> e
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_EXCEPTION_WITH_THROWABLE -> f
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_06 -> g
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_TIMING -> h
+    com.google.analytics.tracking.android.GAUsage$Field TRACK_SOCIAL -> i
+    com.google.analytics.tracking.android.GAUsage$Field GET -> j
+    com.google.analytics.tracking.android.GAUsage$Field SET -> k
+    com.google.analytics.tracking.android.GAUsage$Field SEND -> l
+    com.google.analytics.tracking.android.GAUsage$Field SET_START_SESSION -> m
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_13 -> n
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_NAME -> o
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_15 -> p
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_VERSION -> q
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_17 -> r
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_SCREEN -> s
+    com.google.analytics.tracking.android.GAUsage$Field GET_TRACKING_ID -> t
+    com.google.analytics.tracking.android.GAUsage$Field SET_ANONYMIZE_IP -> u
+    com.google.analytics.tracking.android.GAUsage$Field GET_ANONYMIZE_IP -> v
+    com.google.analytics.tracking.android.GAUsage$Field SET_SAMPLE_RATE -> w
+    com.google.analytics.tracking.android.GAUsage$Field GET_SAMPLE_RATE -> x
+    com.google.analytics.tracking.android.GAUsage$Field SET_USE_SECURE -> y
+    com.google.analytics.tracking.android.GAUsage$Field GET_USE_SECURE -> z
+    com.google.analytics.tracking.android.GAUsage$Field SET_REFERRER -> A
+    com.google.analytics.tracking.android.GAUsage$Field SET_CAMPAIGN -> B
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_ID -> C
+    com.google.analytics.tracking.android.GAUsage$Field GET_APP_ID -> D
+    com.google.analytics.tracking.android.GAUsage$Field SET_EXCEPTION_PARSER -> E
+    com.google.analytics.tracking.android.GAUsage$Field GET_EXCEPTION_PARSER -> F
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_TRANSACTION -> G
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_EXCEPTION -> H
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_RAW_EXCEPTION -> I
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_TIMING -> J
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_SOCIAL -> K
+    com.google.analytics.tracking.android.GAUsage$Field SET_DEBUG -> L
+    com.google.analytics.tracking.android.GAUsage$Field GET_DEBUG -> M
+    com.google.analytics.tracking.android.GAUsage$Field GET_TRACKER -> N
+    com.google.analytics.tracking.android.GAUsage$Field GET_DEFAULT_TRACKER -> O
+    com.google.analytics.tracking.android.GAUsage$Field SET_DEFAULT_TRACKER -> P
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_OPT_OUT -> Q
+    com.google.analytics.tracking.android.GAUsage$Field REQUEST_APP_OPT_OUT -> R
+    com.google.analytics.tracking.android.GAUsage$Field DISPATCH -> S
+    com.google.analytics.tracking.android.GAUsage$Field SET_DISPATCH_PERIOD -> T
+    com.google.analytics.tracking.android.GAUsage$Field BLANK_48 -> U
+    com.google.analytics.tracking.android.GAUsage$Field REPORT_UNCAUGHT_EXCEPTIONS -> V
+    com.google.analytics.tracking.android.GAUsage$Field SET_AUTO_ACTIVITY_TRACKING -> W
+    com.google.analytics.tracking.android.GAUsage$Field SET_SESSION_TIMEOUT -> X
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_EVENT -> Y
+    com.google.analytics.tracking.android.GAUsage$Field CONSTRUCT_ITEM -> Z
+    com.google.analytics.tracking.android.GAUsage$Field SET_APP_INSTALLER_ID -> aa
+    com.google.analytics.tracking.android.GAUsage$Field GET_APP_INSTALLER_ID -> ab
+    com.google.analytics.tracking.android.GAUsage$Field[] $VALUES -> ac
+    com.google.analytics.tracking.android.GAUsage$Field[] values() -> values
+    com.google.analytics.tracking.android.GAUsage$Field valueOf(java.lang.String) -> valueOf
+com.google.analytics.tracking.android.GoogleAnalytics -> com.google.a.a.a.aj:
+    com.google.analytics.tracking.android.AnalyticsThread mThread -> a
+    android.content.Context mContext -> b
+    com.google.analytics.tracking.android.Tracker mDefaultTracker -> c
+    com.google.analytics.tracking.android.AdHitIdGenerator mAdHitIdGenerator -> d
+    java.lang.String mClientId -> e
+    java.lang.Boolean mAppOptOut -> f
+    java.util.Map mTrackers -> g
+    java.lang.String mLastTrackingId -> h
+    com.google.analytics.tracking.android.GoogleAnalytics sInstance -> i
+    com.google.analytics.tracking.android.GoogleAnalytics getInstance(android.content.Context) -> a
+    com.google.analytics.tracking.android.Tracker getTracker(java.lang.String) -> a
+    void sendHit(java.util.Map) -> a
+    java.lang.Boolean access$002(com.google.analytics.tracking.android.GoogleAnalytics,java.lang.Boolean) -> a
+    java.lang.String access$102(com.google.analytics.tracking.android.GoogleAnalytics,java.lang.String) -> a
+com.google.analytics.tracking.android.GoogleAnalytics$1 -> com.google.a.a.a.ak:
+    com.google.analytics.tracking.android.GoogleAnalytics this$0 -> a
+    void reportAppOptOut(boolean) -> a
+com.google.analytics.tracking.android.GoogleAnalytics$2 -> com.google.a.a.a.al:
+    com.google.analytics.tracking.android.GoogleAnalytics this$0 -> a
+    void reportClientId(java.lang.String) -> a
+com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback -> com.google.a.a.a.am:
+    void reportAppOptOut(boolean) -> a
+com.google.analytics.tracking.android.Hit -> com.google.a.a.a.an:
+    java.lang.String mHitString -> a
+    long mHitId -> b
+    long mHitTime -> c
+    java.lang.String mHitUrl -> d
+    java.lang.String getHitParams() -> a
+    void setHitString(java.lang.String) -> a
+    long getHitId() -> b
+    long getHitTime() -> c
+    java.lang.String getHitUrl() -> d
+    void setHitUrl(java.lang.String) -> b
+com.google.analytics.tracking.android.HitBuilder -> com.google.a.a.a.ao:
+    java.util.Map generateHitParams(com.google.analytics.tracking.android.MetaModel,java.util.Map) -> a
+    java.lang.String postProcessHit(com.google.analytics.tracking.android.Hit,long) -> a
+    java.lang.String encode(java.lang.String) -> a
+com.google.analytics.tracking.android.HttpClientFactory -> com.google.a.a.a.ap:
+    org.apache.http.client.HttpClient newInstance() -> a
+com.google.analytics.tracking.android.Log -> com.google.a.a.a.aq:
+    boolean sDebug -> a
+    boolean isDebugEnabled() -> a
+    int d(java.lang.String) -> a
+    int dDebug(java.lang.String) -> b
+    int e(java.lang.String) -> c
+    int i(java.lang.String) -> d
+    int iDebug(java.lang.String) -> e
+    int v(java.lang.String) -> f
+    int vDebug(java.lang.String) -> g
+    int w(java.lang.String) -> h
+    int wDebug(java.lang.String) -> i
+    java.lang.String formatMessage(java.lang.String) -> j
+com.google.analytics.tracking.android.MetaModel -> com.google.a.a.a.ar:
+    java.util.Map mMetaInfos -> a
+    com.google.analytics.tracking.android.MetaModel$MetaInfo getMetaInfo(java.lang.String) -> a
+    void addField(java.lang.String,java.lang.String,java.lang.String,com.google.analytics.tracking.android.MetaModel$Formatter) -> a
+com.google.analytics.tracking.android.MetaModel$Formatter -> com.google.a.a.a.as:
+    java.lang.String format(java.lang.String) -> a
+com.google.analytics.tracking.android.MetaModel$MetaInfo -> com.google.a.a.a.at:
+    java.lang.String mUrlParam -> a
+    java.lang.String mDefaultValue -> b
+    com.google.analytics.tracking.android.MetaModel$Formatter mFormatter -> c
+    java.lang.String getUrlParam(java.lang.String) -> a
+    java.lang.String getDefaultValue() -> a
+    com.google.analytics.tracking.android.MetaModel$Formatter getFormatter() -> b
+com.google.analytics.tracking.android.MetaModelInitializer -> com.google.a.a.a.au:
+    com.google.analytics.tracking.android.MetaModel$Formatter BOOLEAN_FORMATTER -> a
+    com.google.analytics.tracking.android.MetaModel$Formatter UP_TO_TWO_DIGIT_FLOAT_FORMATTER -> b
+    void set(com.google.analytics.tracking.android.MetaModel) -> a
+com.google.analytics.tracking.android.MetaModelInitializer$1 -> com.google.a.a.a.av:
+    java.lang.String format(java.lang.String) -> a
+com.google.analytics.tracking.android.MetaModelInitializer$2 -> com.google.a.a.a.aw:
+    java.text.DecimalFormat mFloatFormat -> a
+    java.lang.String format(java.lang.String) -> a
+com.google.analytics.tracking.android.PersistentAnalyticsStore -> com.google.a.a.a.ax:
+    java.lang.String CREATE_HITS_TABLE -> a
+    com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper mDbHelper -> b
+    com.google.analytics.tracking.android.Dispatcher mDispatcher -> c
+    com.google.analytics.tracking.android.AnalyticsStoreStateListener mListener -> d
+    android.content.Context mContext -> e
+    java.lang.String mDatabaseName -> f
+    long mLastDeleteStaleHitsTime -> g
+    com.google.analytics.tracking.android.Clock mClock -> h
+    com.google.analytics.tracking.android.HttpClientFactory createDefaultHttpClientFactory() -> e
+    void clearHits(long) -> a
+    void putHit(java.util.Map,long,java.lang.String,java.util.Collection) -> a
+    void fillVersionParametersIfNecessary(java.util.Map,java.util.Collection) -> a
+    void storeVersion(java.util.Map,java.lang.String,java.lang.String) -> a
+    void removeOldHitIfFull() -> f
+    void writeHitToDatabase(java.util.Map,long,java.lang.String) -> a
+    java.lang.String generateHitString(java.util.Map) -> a
+    java.util.List peekHits(int) -> a
+    int deleteStaleHits() -> b
+    void deleteHits(java.util.Collection) -> a
+    int getNumStoredHits() -> c
+    void dispatch() -> a
+    android.database.sqlite.SQLiteDatabase getWritableDatabase(java.lang.String) -> a
+    com.google.analytics.tracking.android.Clock access$000(com.google.analytics.tracking.android.PersistentAnalyticsStore) -> a
+    java.lang.String access$100(com.google.analytics.tracking.android.PersistentAnalyticsStore) -> b
+    android.content.Context access$200(com.google.analytics.tracking.android.PersistentAnalyticsStore) -> c
+    java.lang.String access$300() -> d
+com.google.analytics.tracking.android.PersistentAnalyticsStore$1 -> com.google.a.a.a.ay:
+    com.google.analytics.tracking.android.PersistentAnalyticsStore this$0 -> a
+    long currentTimeMillis() -> a
+com.google.analytics.tracking.android.PersistentAnalyticsStore$2 -> com.google.a.a.a.az:
+    com.google.analytics.tracking.android.PersistentAnalyticsStore this$0 -> a
+    org.apache.http.client.HttpClient newInstance() -> a
+com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper -> com.google.a.a.a.ba:
+    boolean mBadDatabase -> b
+    long mLastDatabaseCheckTime -> c
+    com.google.analytics.tracking.android.PersistentAnalyticsStore this$0 -> a
+    boolean tablePresent(java.lang.String,android.database.sqlite.SQLiteDatabase) -> a
+    android.database.sqlite.SQLiteDatabase getWritableDatabase() -> getWritableDatabase
+    void onOpen(android.database.sqlite.SQLiteDatabase) -> onOpen
+    void validateColumnsPresent(android.database.sqlite.SQLiteDatabase) -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.google.analytics.tracking.android.ServiceManager -> com.google.a.a.a.bb:
+    void updateConnectivityStatus(boolean) -> a
+com.google.analytics.tracking.android.ServiceProxy -> com.google.a.a.a.bc:
+    void putHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void dispatch() -> c
+    void createService() -> e
+com.google.analytics.tracking.android.SimpleNetworkDispatcher -> com.google.a.a.a.bd:
+    java.lang.String userAgent -> a
+    com.google.analytics.tracking.android.HttpClientFactory httpClientFactory -> b
+    android.content.Context ctx -> c
+    boolean okToDispatch() -> a
+    int dispatchHits(java.util.List) -> a
+    org.apache.http.HttpEntityEnclosingRequest buildRequest(java.lang.String,java.lang.String) -> a
+    void logDebugInformation(boolean,org.apache.http.HttpEntityEnclosingRequest) -> a
+    java.lang.String createUserAgentString(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.net.URL getUrl(com.google.analytics.tracking.android.Hit) -> a
+com.google.analytics.tracking.android.StandardExceptionParser -> com.google.a.a.a.be:
+    java.util.TreeSet includedPackages -> a
+    void setIncludedPackages(android.content.Context,java.util.Collection) -> a
+    java.lang.Throwable getCause(java.lang.Throwable) -> a
+    java.lang.StackTraceElement getBestStackTraceElement(java.lang.Throwable) -> b
+    java.lang.String getDescription(java.lang.Throwable,java.lang.StackTraceElement,java.lang.String) -> a
+    java.lang.String getDescription(java.lang.String,java.lang.Throwable) -> a
+com.google.analytics.tracking.android.Tracker -> com.google.a.a.a.bf:
+    java.text.DecimalFormat DF -> a
+    com.google.analytics.tracking.android.TrackerHandler mHandler -> b
+    com.google.analytics.tracking.android.Tracker$SimpleModel mModel -> c
+    boolean mIsTrackerClosed -> d
+    boolean mIsTrackingStarted -> e
+    long mTokens -> f
+    long mLastTrackTime -> g
+    boolean mIsThrottlingEnabled -> h
+    void assertTrackerOpen() -> b
+    void sendView(java.lang.String) -> a
+    void sendEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.Long) -> a
+    void internalSend(java.lang.String,java.util.Map) -> a
+    java.util.Map constructEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.Long) -> b
+    boolean tokensAvailable() -> a
+com.google.analytics.tracking.android.Tracker$1 -> com.google.a.a.a.bg:
+com.google.analytics.tracking.android.Tracker$SimpleModel -> com.google.a.a.a.bh:
+    java.util.Map temporaryMap -> a
+    java.util.Map permanentMap -> b
+    void setForNextHit(java.lang.String,java.lang.String) -> a
+    void set(java.lang.String,java.lang.String) -> b
+    void clearTemporaryValues() -> a
+    void setAll(java.util.Map,java.lang.Boolean) -> a
+    java.util.Map getKeysAndValues() -> b
+com.google.analytics.tracking.android.TrackerHandler -> com.google.a.a.a.bi:
+    void sendHit(java.util.Map) -> a
+com.google.analytics.tracking.android.Utils -> com.google.a.a.a.bj:
+    char[] HEXBYTES -> a
+    java.util.Map parseURLParameters(java.lang.String) -> a
+    double safeParseDouble(java.lang.String) -> b
+    boolean safeParseBoolean(java.lang.String) -> c
+    java.lang.String filterCampaign(java.lang.String) -> d
+    java.lang.String getLanguage(java.util.Locale) -> a
+    int fromHexDigit(char) -> a
+    byte[] hexDecode(java.lang.String) -> e
+com.google.android.gms.analytics.internal.Command -> com.google.android.gms.analytics.internal.Command:
+    java.lang.String id -> a
+    java.lang.String urlParam -> b
+    java.lang.String value -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    java.lang.String getId() -> a
+    java.lang.String getUrlParam() -> b
+    java.lang.String getValue() -> c
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    void readFromParcel(android.os.Parcel) -> a
+com.google.android.gms.analytics.internal.Command$1 -> com.google.android.gms.analytics.internal.a:
+    com.google.android.gms.analytics.internal.Command createFromParcel(android.os.Parcel) -> a
+    com.google.android.gms.analytics.internal.Command[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.google.android.gms.analytics.internal.IAnalyticsService -> com.google.android.gms.analytics.internal.b:
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+com.google.android.gms.analytics.internal.IAnalyticsService$Stub -> com.google.android.gms.analytics.internal.c:
+    com.google.android.gms.analytics.internal.IAnalyticsService asInterface(android.os.IBinder) -> a
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.google.android.gms.analytics.internal.IAnalyticsService$Stub$Proxy -> com.google.android.gms.analytics.internal.d:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void sendHit(java.util.Map,long,java.lang.String,java.util.List) -> a
+    void clearHits() -> a
+com.jahanname.text.Syntax -> com.jahanname.a.a:
+    com.jahanname.text.Syntax$Ligatures[] pform -> a
+    java.lang.String getUyPFStr(java.lang.String) -> a
+    java.lang.String getUyPFStrFix(java.lang.String) -> b
+com.jahanname.text.Syntax$Ligatures -> com.jahanname.a.b:
+    char iform -> a
+    char bform -> b
+    char mform -> c
+    char eform -> d
+    byte btype -> e
+    char access$0(com.jahanname.text.Syntax$Ligatures) -> a
+    char access$1(com.jahanname.text.Syntax$Ligatures) -> b
+    char access$2(com.jahanname.text.Syntax$Ligatures) -> c
+    char access$3(com.jahanname.text.Syntax$Ligatures) -> d
+    byte access$4(com.jahanname.text.Syntax$Ligatures) -> e
+com.jahanname.text.bidi.Bidi -> com.jahanname.a.a.a:
+    com.jahanname.text.bidi.BidiReference bidi -> a
+    java.lang.String getReorderingStr(java.lang.String) -> a
+com.jahanname.text.bidi.BidiCharacterMirrorResolver -> com.jahanname.a.a.b:
+    char getBidiCharacterMirror(char) -> a
+com.jahanname.text.bidi.BidiReference -> com.jahanname.a.a.c:
+    byte[] initialTypes -> b
+    byte[] embeddings -> c
+    byte paragraphEmbeddingLevel -> d
+    int textLength -> e
+    byte[] resultTypes -> f
+    byte[] resultLevels -> g
+    java.lang.String[] typenames -> a
+    void setTypes(byte[],byte) -> a
+    void runAlgorithm() -> a
+    void determineParagraphEmbeddingLevel() -> b
+    void determineExplicitEmbeddingLevels() -> c
+    int removeExplicitCodes() -> d
+    int reinsertExplicitCodes(int) -> a
+    byte[] processEmbeddings(byte[],byte) -> b
+    void resolveWeakTypes(int,int,byte,byte,byte) -> a
+    void resolveNeutralTypes(int,int,byte,byte,byte) -> b
+    void resolveImplicitLevels(int,int,byte,byte,byte) -> c
+    byte[] getLevels(int[]) -> a
+    int[] getReordering(int[]) -> b
+    int[] computeMultilineReordering(byte[],int[]) -> a
+    int[] computeReordering(byte[]) -> a
+    boolean isWhitespace(byte) -> a
+    byte typeForLevel(int) -> b
+    int findRunLimit(int,int,byte[]) -> a
+    void setTypes(int,int,byte) -> a
+    void setLevels(int,int,byte) -> b
+com.jahanname.text.bidi.UnicodeCharacterDataResolver -> com.jahanname.a.a.d:
+    int[] BctList_LRE -> b
+    int[] BctList_LRO -> c
+    int[] BctList_R -> d
+    int[] BctList_AL -> e
+    int[] BctList_RLE -> f
+    int[] BctList_RLO -> g
+    int[] BctList_PDF -> h
+    int[] BctList_EN -> i
+    int[] BctList_ES -> j
+    int[] BctList_ET -> k
+    int[] BctList_AN -> l
+    int[] BctList_CS -> m
+    int[] BctList_NSM -> n
+    int[] BctList_BN -> o
+    int[] BctList_B -> p
+    int[] BctList_S -> q
+    int[] BctList_WS -> r
+    int[] BctList_ON -> s
+    byte[] BidiCharType -> a
+com.jahanname.util.Downloader -> com.jahanname.b.a:
+    java.lang.String url -> a
+    android.os.AsyncTask asyncTask -> b
+    boolean finish -> c
+    byte[] data -> d
+    void startDownload() -> a
+    boolean isFinished() -> b
+    byte[] getBytes() -> c
+    java.lang.String getString() -> d
+com.jahanname.util.Entry -> com.jahanname.b.b:
+    int ID -> a
+    java.lang.String Source -> b
+    java.lang.String Pubtime -> c
+    java.lang.String Title -> d
+    java.lang.String Image -> e
+    java.lang.String Content -> f
+    java.lang.String Url -> g
+    java.util.List getEntryListFromJSONString(java.lang.String) -> a
+com.jahanname.util.ImageLoader -> com.jahanname.b.c:
+    boolean isCancel -> a
+    android.os.Handler handler -> b
+    java.util.Queue loaderQueue -> c
+    void initialize() -> a
+    void publishProgress(int,android.widget.ImageView) -> a
+    void addToQueue(java.lang.String,android.widget.ImageView) -> a
+    void cancel(boolean) -> a
+    boolean access$0(com.jahanname.util.ImageLoader) -> a
+    java.util.Queue access$1(com.jahanname.util.ImageLoader) -> b
+    void access$2(com.jahanname.util.ImageLoader,int,android.widget.ImageView) -> a
+    android.os.Handler access$3(com.jahanname.util.ImageLoader) -> c
+com.jahanname.util.ImageLoader$1 -> com.jahanname.b.d:
+    com.jahanname.util.ImageLoader this$0 -> a
+    void run() -> run
+com.jahanname.widget.ScaleImageView -> com.jahanname.widget.ScaleImageView:
+    float MAX_SCALE -> a
+    int DOUBLE_TAP_SECOND -> b
+    android.graphics.Matrix mMatrix -> c
+    float[] mMatrixValues -> d
+    int mIntrinsicWidth -> e
+    int mIntrinsicHeight -> f
+    float mScale -> g
+    float mMinScale -> h
+    long mLastTime -> i
+    boolean isDoubleTap -> j
+    int mDoubleTapX -> k
+    int mDoubleTapY -> l
+    float mPrevDistance -> m
+    boolean isScaling -> n
+    int mPrevMoveX -> o
+    int mPrevMoveY -> p
+    void setImageBitmap(android.graphics.Bitmap) -> setImageBitmap
+    void setImageDrawable(android.graphics.drawable.Drawable) -> setImageDrawable
+    void initialize() -> b
+    boolean setFrame(int,int,int,int) -> setFrame
+    float getValue(android.graphics.Matrix,int) -> a
+    float getScale() -> getScale
+    float getTranslateX() -> getTranslateX
+    float getTranslateY() -> getTranslateY
+    void doubleTapZoomTo(int,int) -> a
+    void zoomTo(float,int,int) -> a
+    void cutting() -> a
+    float distance(float,float,float,float) -> a
+    float dispDistance() -> c
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.jahanname.widget.TextView -> com.jahanname.widget.TextView:
+    int maxWidth -> a
+    int maxHeight -> b
+    int maxLines -> c
+    float lineHeight -> d
+    float linePadding -> e
+    float joinWidth -> f
+    float spaceWidth -> g
+    int strokeColor -> h
+    boolean strokeStyle -> i
+    java.lang.String text -> j
+    java.util.List textLines -> k
+    android.text.TextPaint textPaint -> l
+    android.graphics.Rect clipBounds -> m
+    java.lang.String getText() -> getText
+    void setText(java.lang.String) -> setText
+    void setTextColor(int) -> setTextColor
+    int getTextSize() -> getTextSize
+    void setTextSize(float) -> setTextSize
+    void setTextAlign(android.graphics.Paint$Align) -> setTextAlign
+    void setMaxLines(int) -> setMaxLines
+    void setLinePadding(int) -> setLinePadding
+    void setStrokeStyle(boolean) -> setStrokeStyle
+    void setStrokeColor(int) -> setStrokeColor
+    void initialize(android.content.Context,android.util.AttributeSet) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onMeasure(int,int) -> onMeasure
+    int measureWidth(int) -> a
+    int measureHeight(int) -> b
+    void breakText(int) -> c
+    java.util.List getBreakLines(java.lang.String,int,int,android.text.TextPaint) -> a
+    java.lang.String getJustified(java.lang.String,int,android.text.TextPaint) -> a
+com.jahanname.widget.pageddragdropgrid.DeleteDropZoneView -> com.jahanname.widget.pageddragdropgrid.a:
+    boolean highlight -> a
+    android.graphics.Rect trashBounds -> b
+    android.graphics.Rect newBounds -> c
+    android.graphics.Bitmap trash -> d
+    android.graphics.Paint bitmapPaint -> e
+    android.graphics.Paint bitmapPaintRed -> f
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void highlight() -> a
+    void normal() -> b
+com.jahanname.widget.pageddragdropgrid.DragDropGrid -> com.jahanname.widget.pageddragdropgrid.b:
+    float PADDING_LEFT_SCALE -> a
+    float PADDING_TOP_SCALE -> b
+    int ANIMATION_DURATION -> c
+    int EGDE_DETECTION_MARGIN -> d
+    int gridPageWidth -> e
+    int gridPageHeight -> f
+    int dragged -> g
+    int columnWidthSize -> h
+    int rowHeightSize -> i
+    int biggestChildWidth -> j
+    int biggestChildHeight -> k
+    int computedColumnCount -> l
+    int computedRowCount -> m
+    int initialX -> n
+    int initialY -> o
+    int lastTouchX -> p
+    int lastTouchY -> q
+    int lastTarget -> r
+    boolean movingView -> s
+    boolean wasOnEdgeJustNow -> t
+    java.util.Timer edgeScrollTimer -> u
+    com.jahanname.widget.pageddragdropgrid.PagedContainer container -> v
+    com.jahanname.widget.pageddragdropgrid.DeleteDropZoneView deleteZone -> w
+    com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter adapter -> x
+    android.view.View$OnClickListener onClickListener -> y
+    android.util.SparseIntArray newPositions -> z
+    android.os.Handler edgeTimerHandler -> A
+    void init() -> a
+    void setAdapter(com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter) -> setAdapter
+    void setOnClickListener(android.view.View$OnClickListener) -> setOnClickListener
+    void addChildViews() -> b
+    void animateMoveAllItems() -> c
+    void cancelAnimations() -> d
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void touchUp(android.view.MotionEvent) -> a
+    void manageChildrenReordering() -> e
+    void animateDeleteDragged() -> f
+    void reorderChildrenWhenDraggedIsDeleted() -> g
+    void tellAdapterDraggedIsDeleted(java.lang.Integer) -> a
+    void touchDown(android.view.MotionEvent) -> b
+    void touchMove(android.view.MotionEvent) -> c
+    void manageDeleteZoneHover(int,int) -> a
+    boolean touchUpInDeleteZoneDrop(int,int) -> b
+    void moveDraggedView(int,int) -> c
+    void manageSwapPosition(int,int) -> d
+    void manageEdgeCoordinates(int) -> a
+    void stopAnimateOnTheEdge() -> h
+    void cancelEdgeTimer() -> i
+    void startEdgeDelayTimer(boolean,boolean) -> a
+    void scheduleScroll(boolean,boolean) -> b
+    boolean canScrollToEitherSide(boolean,boolean) -> c
+    void scroll(boolean,boolean) -> d
+    void scrollToNextPage() -> j
+    void scrollToPreviousPage() -> k
+    void moveDraggedToPreviousPage() -> l
+    void removeItemChildren(java.util.List) -> a
+    void moveDraggedToNextPage() -> m
+    void reorderAndAddViews(java.util.List,android.view.View,int) -> a
+    boolean onLeftEdgeOfScreen(int) -> b
+    boolean onRightEdgeOfScreen(int) -> c
+    void animateOnTheEdge() -> n
+    void animateGap(int) -> d
+    android.graphics.Point computeTranslationEndDeltaRelativeToRealViewPosition(android.graphics.Point,android.graphics.Point) -> a
+    android.graphics.Point computeTranslationStartDeltaRelativeToRealViewPosition(int,int,android.graphics.Point) -> a
+    void saveNewPositions(int,int) -> e
+    boolean viewWasAlreadyMoved(int,int) -> f
+    void animateMoveToNewPosition(android.view.View,android.graphics.Point,android.graphics.Point) -> a
+    android.view.animation.TranslateAnimation createTranslateAnimation(android.graphics.Point,android.graphics.Point) -> b
+    android.view.animation.Animation createFastAlphaAnimation() -> o
+    int currentViewAtPosition(int) -> e
+    android.graphics.Point getCoorForIndex(int) -> f
+    int getTargetAtCoor(int,int) -> g
+    int getColumnOfCoordinate(int,int) -> h
+    int getRowOfCoordinate(int) -> g
+    int currentPage() -> p
+    void reorderChildren() -> q
+    void reorderChildrenFix() -> r
+    java.util.List cleanUnorderedChildren() -> s
+    void addReorderedChildrenToParent(java.util.List) -> b
+    java.util.List saveChildren() -> t
+    java.util.List reeorderView(java.util.List) -> c
+    boolean childHasMoved(int) -> h
+    void onMeasure(int,int) -> onMeasure
+    void computeColumnsAndRowsSizes(int,int) -> i
+    void computeGridMatrixSize(int,int) -> j
+    void searchBiggestChildMeasures() -> u
+    int getItemViewCount() -> getItemViewCount
+    void adaptChildrenMeasuresToViewSize(int,int) -> k
+    int acknowledgeHeightSize(int,int) -> l
+    int acknowledgeWidthSize(int,int) -> m
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void layoutPage(int,int) -> n
+    void layoutAChild(int,int,int,int,int) -> a
+    boolean lastTouchOnEdge() -> v
+    int computePageEdgeXCoor(android.view.View) -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+    void animateDragged() -> w
+    boolean aViewIsDragged() -> x
+    void popDeleteView() -> y
+    void createDeleteZone() -> z
+    void hideDeleteView() -> A
+    int positionForView(android.view.View) -> b
+    boolean isPointInsideView(float,float,android.view.View) -> a
+    boolean pointIsInsideViewBounds(float,float,android.view.View,int,int) -> a
+    void setContainer(com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid) -> setContainer
+    int positionOfItem(int,int) -> o
+    com.jahanname.widget.pageddragdropgrid.DragDropGrid$ItemPosition itemInformationAtPosition(int) -> i
+    void tellAdapterToSwapDraggedWithTarget(int,int) -> p
+    void tellAdapterToMoveItemToPreviousPage(int) -> j
+    void tellAdapterToMoveItemToNextPage(int) -> k
+    boolean access$0(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> a
+    void access$1(com.jahanname.widget.pageddragdropgrid.DragDropGrid,boolean) -> a
+    android.os.Handler access$2(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> b
+    void access$3(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> c
+    void access$4(com.jahanname.widget.pageddragdropgrid.DragDropGrid,boolean,boolean) -> a
+    void access$5(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> d
+    void access$6(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> e
+    void access$7(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> f
+    void access$8(com.jahanname.widget.pageddragdropgrid.DragDropGrid) -> g
+com.jahanname.widget.pageddragdropgrid.DragDropGrid$1 -> com.jahanname.widget.pageddragdropgrid.c:
+    com.jahanname.widget.pageddragdropgrid.DragDropGrid this$0 -> a
+    boolean val$onRightEdge -> b
+    boolean val$onLeftEdge -> c
+    void run() -> run
+    com.jahanname.widget.pageddragdropgrid.DragDropGrid access$0(com.jahanname.widget.pageddragdropgrid.DragDropGrid$1) -> a
+com.jahanname.widget.pageddragdropgrid.DragDropGrid$1$1 -> com.jahanname.widget.pageddragdropgrid.d:
+    com.jahanname.widget.pageddragdropgrid.DragDropGrid$1 this$1 -> a
+    boolean val$onRightEdge -> b
+    boolean val$onLeftEdge -> c
+    void run() -> run
+com.jahanname.widget.pageddragdropgrid.DragDropGrid$ItemPosition -> com.jahanname.widget.pageddragdropgrid.e:
+    int pageIndex -> a
+    int itemIndex -> b
+    com.jahanname.widget.pageddragdropgrid.DragDropGrid this$0 -> c
+com.jahanname.widget.pageddragdropgrid.OnItemChangedListener -> com.jahanname.widget.pageddragdropgrid.f:
+    void onItemChanged() -> a
+com.jahanname.widget.pageddragdropgrid.PagedContainer -> com.jahanname.widget.pageddragdropgrid.g:
+    void scrollToPage(int) -> a
+    void scrollLeft() -> a
+    void scrollRight() -> b
+    int currentPage() -> c
+    void enableScroll() -> d
+    void disableScroll() -> e
+    boolean canScrollToNextPage() -> f
+    boolean canScrollToPreviousPage() -> g
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid -> com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid:
+    int mActivePage -> a
+    float lastDownX -> b
+    float lastDownY -> c
+    com.jahanname.widget.pageddragdropgrid.DragDropGrid grid -> d
+    com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter adapter -> e
+    android.view.View$OnClickListener onClickListener -> f
+    com.jahanname.widget.pageddragdropgrid.OnItemChangedListener onPagedGridItemChangedListener -> g
+    void initGrid() -> k
+    void initPagedScroll() -> h
+    void setAdapter(com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter) -> setAdapter
+    void setClickListener(android.view.View$OnClickListener) -> setClickListener
+    void onClick(android.view.View) -> a
+    boolean onLongClick(android.view.View) -> b
+    void setOnItemChangedListener(com.jahanname.widget.pageddragdropgrid.OnItemChangedListener) -> setOnItemChangedListener
+    void onItemChanged() -> i
+    void notifyDataSetChanged() -> j
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    void scrollToPage(int) -> a
+    void scrollLeft() -> a
+    void scrollRight() -> b
+    int currentPage() -> c
+    void enableScroll() -> d
+    void disableScroll() -> e
+    boolean canScrollToNextPage() -> f
+    boolean canScrollToPreviousPage() -> g
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter -> com.jahanname.widget.pageddragdropgrid.h:
+    int pageCount() -> a
+    int itemCountInPage(int) -> a
+    android.view.View view(int,int) -> a
+    int rowCount() -> b
+    int columnCount() -> c
+    void swapItems(int,int,int) -> a
+    void moveItemToPreviousPage(int,int) -> b
+    void moveItemToNextPage(int,int) -> c
+    void deleteItem(int,int) -> d
+    java.util.List getGridPages() -> d
+    void onItemChanged() -> e
+com.jahanname.widget.pageddragdropgrid.PagedGridAdapter -> com.jahanname.widget.pageddragdropgrid.i:
+    android.content.Context context -> a
+    com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid pagedGrid -> b
+    java.util.List gridPages -> c
+    android.graphics.Bitmap buttonBackground -> d
+    void setGridPages(java.util.List) -> a
+    int getButtonWidth() -> f
+    int getButtonHeight() -> g
+    android.graphics.Bitmap getButtonBackground(int,int) -> e
+    int pageCount() -> a
+    int itemCountInPage(int) -> a
+    android.view.View view(int,int) -> a
+    int rowCount() -> b
+    int columnCount() -> c
+    void swapItems(int,int,int) -> a
+    void moveItemToPreviousPage(int,int) -> b
+    void moveItemToNextPage(int,int) -> c
+    void deleteItem(int,int) -> d
+    java.util.List getGridPages() -> d
+    void onItemChanged() -> e
+    com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid access$0(com.jahanname.widget.pageddragdropgrid.PagedGridAdapter) -> a
+com.jahanname.widget.pageddragdropgrid.PagedGridAdapter$1 -> com.jahanname.widget.pageddragdropgrid.j:
+    com.jahanname.widget.pageddragdropgrid.PagedGridAdapter this$0 -> a
+    android.widget.RelativeLayout val$layout -> b
+    boolean onLongClick(android.view.View) -> onLongClick
+com.jahanname.widget.pageddragdropgrid.PagedGridAdapter$2 -> com.jahanname.widget.pageddragdropgrid.k:
+    com.jahanname.widget.pageddragdropgrid.PagedGridAdapter this$0 -> a
+    android.widget.RelativeLayout val$layout -> b
+    void onClick(android.view.View) -> onClick
+com.jahanname.widget.pageddragdropgrid.PagedGridAdapter$3 -> com.jahanname.widget.pageddragdropgrid.l:
+    com.jahanname.widget.pageddragdropgrid.PagedGridAdapter this$0 -> a
+    android.widget.RelativeLayout val$layout -> b
+    boolean onLongClick(android.view.View) -> onLongClick
+com.jahanname.widget.pageddragdropgrid.PagedGridAdapter$4 -> com.jahanname.widget.pageddragdropgrid.m:
+    com.jahanname.widget.pageddragdropgrid.PagedGridAdapter this$0 -> a
+    android.widget.RelativeLayout val$layout -> b
+    void onClick(android.view.View) -> onClick
+com.jahanname.widget.pageddragdropgrid.PagedGridItem -> com.jahanname.widget.pageddragdropgrid.n:
+    java.lang.String uuid -> a
+    java.lang.String name -> b
+    int category -> c
+    java.lang.String getUUID() -> a
+    java.lang.String getName() -> b
+    int getCategory() -> c
+com.jahanname.widget.pageddragdropgrid.PagedGridPage -> com.jahanname.widget.pageddragdropgrid.o:
+    java.util.List items -> a
+    int size() -> a
+    com.jahanname.widget.pageddragdropgrid.PagedGridItem get(int) -> a
+    void add(com.jahanname.widget.pageddragdropgrid.PagedGridItem) -> a
+    void swap(int,int) -> a
+    com.jahanname.widget.pageddragdropgrid.PagedGridItem remove(int) -> b
+    void delete(int) -> c
+net.bilkan.jahanname.App -> net.bilkan.jahanname.App:
+    int[] BACKGROUND_COLORS -> a
+    int[] BACKGROUND_IMAGES -> b
+    java.util.Random RANDOM -> c
+    android.graphics.Typeface TYPE_FACE_UKIJ_TOR -> d
+    android.content.Context CONTEXT -> e
+    android.view.Display DISPLAY -> f
+    android.util.DisplayMetrics DISPLAY_METRICS -> g
+    android.content.res.Resources RESOURCES -> h
+    android.graphics.Rect DECOR_VIEW_BOUNDS -> i
+    android.graphics.drawable.Drawable IMAGE_VIEW_ACTIVITY_DRAWABLE -> j
+    boolean LOAD_IMAGE_AUTOMATICALLY -> k
+    boolean JUST_TEXT_MODE -> l
+    int DEFAULT_TEXT_SIZE -> m
+    int DEFAULT_BACKGROUND_COLOR -> n
+    int DEFAULT_BACKGROUND_IMAGE -> o
+    void onCreate() -> onCreate
+    void initializePreferences() -> a
+    void applyPreferences() -> b
+    int getPixelFromDip(int) -> a
+    boolean isCacheFileExists(java.lang.String) -> a
+    android.graphics.drawable.Drawable getDrawableFromCache(java.lang.String) -> b
+    void setBytesIntoCache(byte[],java.lang.String) -> a
+    void saveDrawable(android.graphics.drawable.Drawable) -> a
+    java.lang.String getMD5String(java.lang.String) -> c
+    int getRandomBackgroundColor() -> c
+    boolean loadImageAutomatically() -> d
+net.bilkan.jahanname.CategoryActivity -> net.bilkan.jahanname.CategoryActivity:
+    android.widget.RelativeLayout layoutTitle -> b
+    android.widget.ImageView imageViewBack -> c
+    android.widget.ImageView imageViewRefresh -> d
+    android.widget.ListView listView -> e
+    com.jahanname.widget.TextView textViewNetworkNotAvailable -> f
+    java.util.List categoryList -> g
+    java.util.List existCategoryList -> h
+    net.bilkan.jahanname.CategoryActivity$BackgroundTask backgroundTask -> i
+    net.bilkan.tools.Statistics sts -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    void initialize() -> a
+    void initializeCategory() -> b
+    void setListView() -> c
+    void startRefresh() -> d
+    void stopRefresh() -> e
+    java.util.List access$0(net.bilkan.jahanname.CategoryActivity) -> a
+    java.util.List access$1(net.bilkan.jahanname.CategoryActivity) -> b
+    void access$2(net.bilkan.jahanname.CategoryActivity) -> c
+    void access$3(net.bilkan.jahanname.CategoryActivity,java.util.List) -> a
+    void access$4(net.bilkan.jahanname.CategoryActivity) -> d
+    void access$5(net.bilkan.jahanname.CategoryActivity) -> e
+    android.widget.ImageView access$6(net.bilkan.jahanname.CategoryActivity) -> f
+net.bilkan.jahanname.CategoryActivity$1 -> net.bilkan.jahanname.a:
+    net.bilkan.jahanname.CategoryActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.CategoryActivity$2 -> net.bilkan.jahanname.b:
+    net.bilkan.jahanname.CategoryActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.CategoryActivity$3 -> net.bilkan.jahanname.c:
+    net.bilkan.jahanname.CategoryActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+net.bilkan.jahanname.CategoryActivity$BackgroundTask -> net.bilkan.jahanname.d:
+    net.bilkan.jahanname.CategoryActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Void) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+net.bilkan.jahanname.CategoryActivity$ListViewAdapter -> net.bilkan.jahanname.e:
+    android.view.LayoutInflater inflater -> a
+    net.bilkan.jahanname.CategoryActivity this$0 -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+net.bilkan.jahanname.EntryContentActivity -> net.bilkan.jahanname.EntryContentActivity:
+    int randomBackgroundColor -> a
+    float lastDownScrollY -> b
+    float lastDownY -> c
+    android.widget.ScrollView scrollView -> d
+    android.widget.RelativeLayout layoutMain -> e
+    android.widget.LinearLayout layoutContent -> f
+    android.widget.TextView textViewPubtime -> g
+    android.view.View viewBorderTop -> h
+    com.jahanname.widget.TextView textViewSource -> i
+    com.jahanname.widget.TextView textViewTitle -> j
+    com.jahanname.widget.TextView textViewNetworkNotAvailable -> k
+    android.widget.ImageView imageViewRefresh -> l
+    java.util.List contentList -> m
+    com.jahanname.util.ImageLoader imageLoader -> n
+    net.bilkan.jahanname.EntryContentActivity$BackgroundTask backgroundTask -> o
+    android.os.Handler imageLoaderHandler -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    boolean dispatchTouchEvent(android.view.MotionEvent) -> dispatchTouchEvent
+    void initialize() -> a
+    void initializeContent() -> b
+    void setContent() -> c
+    void startRefresh() -> d
+    void stopRefresh() -> e
+    void access$0(net.bilkan.jahanname.EntryContentActivity) -> a
+    void access$1(net.bilkan.jahanname.EntryContentActivity,java.util.List) -> a
+    void access$2(net.bilkan.jahanname.EntryContentActivity) -> b
+    void access$3(net.bilkan.jahanname.EntryContentActivity) -> c
+    com.jahanname.widget.TextView access$4(net.bilkan.jahanname.EntryContentActivity) -> d
+    com.jahanname.util.ImageLoader access$5(net.bilkan.jahanname.EntryContentActivity) -> e
+net.bilkan.jahanname.EntryContentActivity$1 -> net.bilkan.jahanname.f:
+    void handleMessage(android.os.Message) -> handleMessage
+net.bilkan.jahanname.EntryContentActivity$2 -> net.bilkan.jahanname.g:
+    net.bilkan.jahanname.EntryContentActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.EntryContentActivity$3 -> net.bilkan.jahanname.h:
+    net.bilkan.jahanname.EntryContentActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.EntryContentActivity$4 -> net.bilkan.jahanname.i:
+    net.bilkan.jahanname.EntryContentActivity this$0 -> a
+    android.util.Pair val$pair -> b
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.EntryContentActivity$BackgroundTask -> net.bilkan.jahanname.j:
+    net.bilkan.jahanname.EntryContentActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Void) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+net.bilkan.jahanname.EntryListActivity -> net.bilkan.jahanname.EntryListActivity:
+    int category -> a
+    int lastEntryId -> b
+    int currentViewIndex -> c
+    float lastDownY -> d
+    float lastDownX -> e
+    android.widget.RelativeLayout layoutTitle -> f
+    android.widget.LinearLayout layoutFlipper -> g
+    android.widget.TextView textViewPage -> h
+    android.widget.ImageView imageViewBack -> i
+    android.widget.ImageView imageViewRefresh -> j
+    com.jahanname.widget.TextView textViewTitle -> k
+    com.jahanname.widget.TextView textViewNetworkNotAvailable -> l
+    java.util.List entryViewList -> m
+    net.bilkan.jahanname.EntryListActivity$BackgroundTask backgroundTask -> n
+    com.jahanname.util.ImageLoader imageLoader -> o
+    net.bilkan.tools.Statistics sts -> p
+    android.os.Handler imageLoaderHandler -> q
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    boolean dispatchTouchEvent(android.view.MotionEvent) -> dispatchTouchEvent
+    void initialize() -> a
+    void appendEntry() -> b
+    void showEntryView(int) -> a
+    void appendEntryViews(java.util.List) -> a
+    void showEntryContent(com.jahanname.util.Entry) -> a
+    android.view.View getView() -> c
+    void startRefresh() -> d
+    void stopRefresh() -> e
+    void access$0(net.bilkan.jahanname.EntryListActivity) -> a
+    int access$1(net.bilkan.jahanname.EntryListActivity) -> b
+    int access$2(net.bilkan.jahanname.EntryListActivity) -> c
+    void access$3(net.bilkan.jahanname.EntryListActivity,int) -> a
+    java.util.List access$4(net.bilkan.jahanname.EntryListActivity) -> d
+    com.jahanname.widget.TextView access$5(net.bilkan.jahanname.EntryListActivity) -> e
+    void access$6(net.bilkan.jahanname.EntryListActivity,java.util.List) -> a
+    void access$7(net.bilkan.jahanname.EntryListActivity) -> f
+    android.widget.ImageView access$8(net.bilkan.jahanname.EntryListActivity) -> g
+    void access$9(net.bilkan.jahanname.EntryListActivity,com.jahanname.util.Entry) -> a
+    net.bilkan.tools.Statistics access$10(net.bilkan.jahanname.EntryListActivity) -> h
+    com.jahanname.util.ImageLoader access$11(net.bilkan.jahanname.EntryListActivity) -> i
+net.bilkan.jahanname.EntryListActivity$1 -> net.bilkan.jahanname.k:
+    void handleMessage(android.os.Message) -> handleMessage
+net.bilkan.jahanname.EntryListActivity$2 -> net.bilkan.jahanname.l:
+    net.bilkan.jahanname.EntryListActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.EntryListActivity$3 -> net.bilkan.jahanname.m:
+    net.bilkan.jahanname.EntryListActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.EntryListActivity$4 -> net.bilkan.jahanname.n:
+    net.bilkan.jahanname.EntryListActivity this$0 -> a
+    com.jahanname.util.Entry val$entry -> b
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.EntryListActivity$5 -> net.bilkan.jahanname.o:
+    net.bilkan.jahanname.EntryListActivity this$0 -> a
+    com.jahanname.util.Entry val$entry -> b
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.EntryListActivity$BackgroundTask -> net.bilkan.jahanname.p:
+    net.bilkan.jahanname.EntryListActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.util.List doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.util.List) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+net.bilkan.jahanname.ImageViewActivity -> net.bilkan.jahanname.ImageViewActivity:
+    android.widget.RelativeLayout layoutTitle -> a
+    android.widget.ImageView imageViewBack -> b
+    android.widget.ImageView imageViewDownload -> c
+    com.jahanname.widget.ScaleImageView imageView -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    void initialize() -> a
+    android.widget.ImageView access$0(net.bilkan.jahanname.ImageViewActivity) -> a
+    com.jahanname.widget.ScaleImageView access$1(net.bilkan.jahanname.ImageViewActivity) -> b
+    android.widget.ImageView access$2(net.bilkan.jahanname.ImageViewActivity) -> c
+net.bilkan.jahanname.ImageViewActivity$1 -> net.bilkan.jahanname.q:
+    net.bilkan.jahanname.ImageViewActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.ImageViewActivity$2 -> net.bilkan.jahanname.r:
+    net.bilkan.jahanname.ImageViewActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.ImageViewActivity$3 -> net.bilkan.jahanname.s:
+    net.bilkan.jahanname.ImageViewActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.ImageViewActivity$4 -> net.bilkan.jahanname.t:
+    net.bilkan.jahanname.ImageViewActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.MainActivity -> net.bilkan.jahanname.MainActivity:
+    android.widget.RelativeLayout layoutTip -> a
+    com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid pagedGrid -> b
+    com.jahanname.widget.pageddragdropgrid.PagedGridAdapter pagedAdapter -> c
+    android.widget.ImageView imageViewBackground -> d
+    android.widget.ImageView imageViewAdd -> e
+    android.widget.ImageView imageViewSetting -> f
+    net.bilkan.tools.Statistics sts -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onClick(android.view.View) -> onClick
+    void onItemChanged() -> a
+    void initialize() -> b
+    void initializeAdapter() -> c
+    void addCategory(java.lang.String,int) -> a
+    java.util.List getCategoryList() -> d
+    void setCategoryList(java.util.List) -> a
+    void showContentList(java.lang.String,int) -> b
+    java.util.List access$0(net.bilkan.jahanname.MainActivity) -> a
+    android.widget.ImageView access$1(net.bilkan.jahanname.MainActivity) -> b
+    android.widget.ImageView access$2(net.bilkan.jahanname.MainActivity) -> c
+net.bilkan.jahanname.MainActivity$1 -> net.bilkan.jahanname.u:
+    net.bilkan.jahanname.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.MainActivity$2 -> net.bilkan.jahanname.v:
+    net.bilkan.jahanname.MainActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.MainActivity$3 -> net.bilkan.jahanname.w:
+    net.bilkan.jahanname.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.MainActivity$4 -> net.bilkan.jahanname.x:
+    net.bilkan.jahanname.MainActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.SettingActivity -> net.bilkan.jahanname.SettingActivity:
+    android.widget.RelativeLayout layoutTitle -> a
+    android.widget.ImageView imageViewBack -> b
+    android.widget.CheckBox checkBoxLoadImageAutomatically -> c
+    android.widget.CheckBox checkBoxJustTextMode -> d
+    com.jahanname.widget.TextView textViewTextSize -> e
+    android.widget.Button buttonTextSizeUp -> f
+    android.widget.Button buttonTextSizeDown -> g
+    android.content.SharedPreferences$Editor editor -> h
+    net.bilkan.tools.Statistics sts -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    void initialize() -> a
+    void applyTextSize(int) -> a
+    void initializeOther() -> b
+    android.widget.ImageView access$0(net.bilkan.jahanname.SettingActivity) -> a
+    android.content.SharedPreferences$Editor access$1(net.bilkan.jahanname.SettingActivity) -> b
+    net.bilkan.tools.Statistics access$2(net.bilkan.jahanname.SettingActivity) -> c
+    com.jahanname.widget.TextView access$3(net.bilkan.jahanname.SettingActivity) -> d
+    void access$4(net.bilkan.jahanname.SettingActivity,int) -> a
+    android.widget.RelativeLayout access$5(net.bilkan.jahanname.SettingActivity) -> e
+net.bilkan.jahanname.SettingActivity$1 -> net.bilkan.jahanname.y:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.SettingActivity$2 -> net.bilkan.jahanname.z:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.SettingActivity$3 -> net.bilkan.jahanname.aa:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+net.bilkan.jahanname.SettingActivity$4 -> net.bilkan.jahanname.ab:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+net.bilkan.jahanname.SettingActivity$5 -> net.bilkan.jahanname.ac:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.SettingActivity$6 -> net.bilkan.jahanname.ad:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.SettingActivity$7 -> net.bilkan.jahanname.ae:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    int[] val$viewcolorid -> b
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.SettingActivity$8 -> net.bilkan.jahanname.af:
+    net.bilkan.jahanname.SettingActivity this$0 -> a
+    int[] val$viewimageid -> b
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.SplashActivity -> net.bilkan.jahanname.SplashActivity:
+    android.widget.ImageView imageViewIcon -> a
+    android.widget.ImageView imageViewName -> b
+    android.view.animation.Animation animationOutLeft -> c
+    android.view.animation.Animation animationOutRight -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    android.widget.ImageView access$0(net.bilkan.jahanname.SplashActivity) -> a
+    android.widget.ImageView access$1(net.bilkan.jahanname.SplashActivity) -> b
+    android.view.animation.Animation access$2(net.bilkan.jahanname.SplashActivity) -> c
+    android.view.animation.Animation access$3(net.bilkan.jahanname.SplashActivity) -> d
+net.bilkan.jahanname.SplashActivity$1 -> net.bilkan.jahanname.ag:
+    net.bilkan.jahanname.SplashActivity this$0 -> a
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+net.bilkan.jahanname.SplashActivity$2 -> net.bilkan.jahanname.ah:
+    net.bilkan.jahanname.SplashActivity this$0 -> a
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+net.bilkan.jahanname.SplashActivity$3 -> net.bilkan.jahanname.ai:
+    net.bilkan.jahanname.SplashActivity this$0 -> a
+    void run() -> run
+net.bilkan.jahanname.SplashActivity$4 -> net.bilkan.jahanname.aj:
+    net.bilkan.jahanname.SplashActivity this$0 -> a
+    void run() -> run
+net.bilkan.jahanname.WelcomeActivity -> net.bilkan.jahanname.WelcomeActivity:
+    float lastDownY -> a
+    java.lang.String textViewText -> b
+    android.widget.ViewFlipper viewFlipper -> c
+    android.widget.ImageView imageViewBackground -> d
+    android.widget.ImageView imageViewRefresh -> e
+    android.widget.ImageView imageViewDownload -> f
+    com.jahanname.widget.TextView textView -> g
+    net.bilkan.jahanname.WelcomeActivity$BackgroundTask backgroundTask -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void initialize() -> a
+    void setCacheDrawable() -> b
+    void setNewDrawable() -> c
+    void startRefresh() -> d
+    void stopRefresh() -> e
+    void access$0(net.bilkan.jahanname.WelcomeActivity) -> a
+    void access$1(net.bilkan.jahanname.WelcomeActivity,java.lang.String) -> a
+    void access$2(net.bilkan.jahanname.WelcomeActivity) -> b
+    java.lang.String access$3(net.bilkan.jahanname.WelcomeActivity) -> c
+    com.jahanname.widget.TextView access$4(net.bilkan.jahanname.WelcomeActivity) -> d
+    void access$5(net.bilkan.jahanname.WelcomeActivity) -> e
+    android.widget.ImageView access$6(net.bilkan.jahanname.WelcomeActivity) -> f
+    android.widget.ImageView access$7(net.bilkan.jahanname.WelcomeActivity) -> g
+net.bilkan.jahanname.WelcomeActivity$1 -> net.bilkan.jahanname.ak:
+    net.bilkan.jahanname.WelcomeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+net.bilkan.jahanname.WelcomeActivity$2 -> net.bilkan.jahanname.al:
+    net.bilkan.jahanname.WelcomeActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+net.bilkan.jahanname.WelcomeActivity$BackgroundTask -> net.bilkan.jahanname.am:
+    net.bilkan.jahanname.WelcomeActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    java.lang.Integer doInBackground(java.lang.Void[]) -> a
+    void onPostExecute(java.lang.Integer) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+net.bilkan.tools.Statistics -> net.bilkan.a.a:
+    com.google.analytics.tracking.android.Tracker mGaTracker -> a
+    com.google.analytics.tracking.android.GoogleAnalytics mGaInstance -> b
+    void sendView(java.lang.String) -> a
+    void setDispatch(int) -> a
+    void sendEvent(java.lang.String,java.lang.String,java.lang.String,long) -> a

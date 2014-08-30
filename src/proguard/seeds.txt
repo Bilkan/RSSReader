@@ -1,0 +1,248 @@
+com.google.analytics.tracking.android.AdMobInfo$AdMobKey: com.google.analytics.tracking.android.AdMobInfo$AdMobKey[] values()
+com.google.analytics.tracking.android.AdMobInfo$AdMobKey: com.google.analytics.tracking.android.AdMobInfo$AdMobKey valueOf(java.lang.String)
+com.google.analytics.tracking.android.GAServiceProxy$ConnectState: com.google.analytics.tracking.android.GAServiceProxy$ConnectState[] values()
+com.google.analytics.tracking.android.GAServiceProxy$ConnectState: com.google.analytics.tracking.android.GAServiceProxy$ConnectState valueOf(java.lang.String)
+com.google.analytics.tracking.android.GAUsage$Field: com.google.analytics.tracking.android.GAUsage$Field[] values()
+com.google.analytics.tracking.android.GAUsage$Field: com.google.analytics.tracking.android.GAUsage$Field valueOf(java.lang.String)
+com.google.android.gms.analytics.internal.Command
+com.google.android.gms.analytics.internal.Command: android.os.Parcelable$Creator CREATOR
+com.jahanname.widget.ScaleImageView
+com.jahanname.widget.ScaleImageView: ScaleImageView(android.content.Context,android.util.AttributeSet)
+com.jahanname.widget.ScaleImageView: ScaleImageView(android.content.Context)
+com.jahanname.widget.ScaleImageView: void setImageBitmap(android.graphics.Bitmap)
+com.jahanname.widget.ScaleImageView: void setImageDrawable(android.graphics.drawable.Drawable)
+com.jahanname.widget.ScaleImageView: float getScale()
+com.jahanname.widget.ScaleImageView: float getTranslateX()
+com.jahanname.widget.ScaleImageView: float getTranslateY()
+com.jahanname.widget.TextView
+com.jahanname.widget.TextView: TextView(android.content.Context)
+com.jahanname.widget.TextView: TextView(android.content.Context,android.util.AttributeSet)
+com.jahanname.widget.TextView: TextView(android.content.Context,android.util.AttributeSet,int)
+com.jahanname.widget.TextView: java.lang.String getText()
+com.jahanname.widget.TextView: void setText(java.lang.String)
+com.jahanname.widget.TextView: void setTextColor(int)
+com.jahanname.widget.TextView: int getTextSize()
+com.jahanname.widget.TextView: void setTextSize(float)
+com.jahanname.widget.TextView: void setTextAlign(android.graphics.Paint$Align)
+com.jahanname.widget.TextView: void setMaxLines(int)
+com.jahanname.widget.TextView: void setLinePadding(int)
+com.jahanname.widget.TextView: void setStrokeStyle(boolean)
+com.jahanname.widget.TextView: void setStrokeColor(int)
+com.jahanname.widget.pageddragdropgrid.DragDropGrid: void setAdapter(com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter)
+com.jahanname.widget.pageddragdropgrid.DragDropGrid: void setOnClickListener(android.view.View$OnClickListener)
+com.jahanname.widget.pageddragdropgrid.DragDropGrid: int getItemViewCount()
+com.jahanname.widget.pageddragdropgrid.DragDropGrid: void setContainer(com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: PagedDragDropGrid(android.content.Context,android.util.AttributeSet,int)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: PagedDragDropGrid(android.content.Context,android.util.AttributeSet)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: PagedDragDropGrid(android.content.Context)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: PagedDragDropGrid(android.content.Context,android.util.AttributeSet,int,com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: PagedDragDropGrid(android.content.Context,android.util.AttributeSet,com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: PagedDragDropGrid(android.content.Context,com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: void setAdapter(com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: void setClickListener(android.view.View$OnClickListener)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGrid: void setOnItemChangedListener(com.jahanname.widget.pageddragdropgrid.OnItemChangedListener)
+net.bilkan.jahanname.App
+net.bilkan.jahanname.App: App()
+net.bilkan.jahanname.CategoryActivity
+net.bilkan.jahanname.CategoryActivity: CategoryActivity()
+net.bilkan.jahanname.EntryContentActivity
+net.bilkan.jahanname.EntryContentActivity: EntryContentActivity()
+net.bilkan.jahanname.EntryListActivity
+net.bilkan.jahanname.EntryListActivity: EntryListActivity()
+net.bilkan.jahanname.ImageViewActivity
+net.bilkan.jahanname.ImageViewActivity: ImageViewActivity()
+net.bilkan.jahanname.MainActivity
+net.bilkan.jahanname.MainActivity: MainActivity()
+net.bilkan.jahanname.MainActivity: void onClick(android.view.View)
+net.bilkan.jahanname.R$anim: int animation_in_down
+net.bilkan.jahanname.R$anim: int animation_in_fade
+net.bilkan.jahanname.R$anim: int animation_in_left
+net.bilkan.jahanname.R$anim: int animation_in_right
+net.bilkan.jahanname.R$anim: int animation_in_up
+net.bilkan.jahanname.R$anim: int animation_out_down
+net.bilkan.jahanname.R$anim: int animation_out_fade
+net.bilkan.jahanname.R$anim: int animation_out_left
+net.bilkan.jahanname.R$anim: int animation_out_right
+net.bilkan.jahanname.R$anim: int animation_out_up
+net.bilkan.jahanname.R$anim: int animation_rotate
+net.bilkan.jahanname.R$anim: int animation_swing
+net.bilkan.jahanname.R$bool: int ga_autoActivityTracking
+net.bilkan.jahanname.R$bool: int ga_reportUncaughtExceptions
+net.bilkan.jahanname.R$color: int black
+net.bilkan.jahanname.R$color: int darkgray
+net.bilkan.jahanname.R$color: int lightgray
+net.bilkan.jahanname.R$color: int transparent
+net.bilkan.jahanname.R$color: int white
+net.bilkan.jahanname.R$color: int whitesmoke
+net.bilkan.jahanname.R$drawable: int add
+net.bilkan.jahanname.R$drawable: int add_selected
+net.bilkan.jahanname.R$drawable: int back_dark
+net.bilkan.jahanname.R$drawable: int back_light
+net.bilkan.jahanname.R$drawable: int background1
+net.bilkan.jahanname.R$drawable: int background10
+net.bilkan.jahanname.R$drawable: int background10_thumbnail
+net.bilkan.jahanname.R$drawable: int background11
+net.bilkan.jahanname.R$drawable: int background11_thumbnail
+net.bilkan.jahanname.R$drawable: int background12
+net.bilkan.jahanname.R$drawable: int background12_thumbnail
+net.bilkan.jahanname.R$drawable: int background1_thumbnail
+net.bilkan.jahanname.R$drawable: int background2
+net.bilkan.jahanname.R$drawable: int background2_thumbnail
+net.bilkan.jahanname.R$drawable: int background3
+net.bilkan.jahanname.R$drawable: int background3_thumbnail
+net.bilkan.jahanname.R$drawable: int background4
+net.bilkan.jahanname.R$drawable: int background4_thumbnail
+net.bilkan.jahanname.R$drawable: int background5
+net.bilkan.jahanname.R$drawable: int background5_thumbnail
+net.bilkan.jahanname.R$drawable: int background6
+net.bilkan.jahanname.R$drawable: int background6_thumbnail
+net.bilkan.jahanname.R$drawable: int background7
+net.bilkan.jahanname.R$drawable: int background7_thumbnail
+net.bilkan.jahanname.R$drawable: int background8
+net.bilkan.jahanname.R$drawable: int background8_thumbnail
+net.bilkan.jahanname.R$drawable: int background9
+net.bilkan.jahanname.R$drawable: int background9_thumbnail
+net.bilkan.jahanname.R$drawable: int discard
+net.bilkan.jahanname.R$drawable: int download
+net.bilkan.jahanname.R$drawable: int download_dark
+net.bilkan.jahanname.R$drawable: int download_light
+net.bilkan.jahanname.R$drawable: int download_selected
+net.bilkan.jahanname.R$drawable: int ic_launcher
+net.bilkan.jahanname.R$drawable: int icon
+net.bilkan.jahanname.R$drawable: int jahanname
+net.bilkan.jahanname.R$drawable: int listitem_selector
+net.bilkan.jahanname.R$drawable: int picture
+net.bilkan.jahanname.R$drawable: int picture_loading_1
+net.bilkan.jahanname.R$drawable: int picture_loading_10
+net.bilkan.jahanname.R$drawable: int picture_loading_2
+net.bilkan.jahanname.R$drawable: int picture_loading_3
+net.bilkan.jahanname.R$drawable: int picture_loading_4
+net.bilkan.jahanname.R$drawable: int picture_loading_5
+net.bilkan.jahanname.R$drawable: int picture_loading_6
+net.bilkan.jahanname.R$drawable: int picture_loading_7
+net.bilkan.jahanname.R$drawable: int picture_loading_8
+net.bilkan.jahanname.R$drawable: int picture_loading_9
+net.bilkan.jahanname.R$drawable: int pointer_left
+net.bilkan.jahanname.R$drawable: int refresh_dark
+net.bilkan.jahanname.R$drawable: int refresh_light
+net.bilkan.jahanname.R$drawable: int right_dark
+net.bilkan.jahanname.R$drawable: int right_light
+net.bilkan.jahanname.R$drawable: int setting
+net.bilkan.jahanname.R$drawable: int setting_selected
+net.bilkan.jahanname.R$drawable: int splash_background
+net.bilkan.jahanname.R$id: int categoryactivity_imageViewBack
+net.bilkan.jahanname.R$id: int categoryactivity_imageViewRefresh
+net.bilkan.jahanname.R$id: int categoryactivity_layoutTitle
+net.bilkan.jahanname.R$id: int categoryactivity_listView
+net.bilkan.jahanname.R$id: int categoryactivity_textViewNetworkNotAvailable
+net.bilkan.jahanname.R$id: int entrycontentactivity_imageViewRefresh
+net.bilkan.jahanname.R$id: int entrycontentactivity_layoutContent
+net.bilkan.jahanname.R$id: int entrycontentactivity_layoutMain
+net.bilkan.jahanname.R$id: int entrycontentactivity_scrollView
+net.bilkan.jahanname.R$id: int entrycontentactivity_textViewNetworkNotAvailable
+net.bilkan.jahanname.R$id: int entrycontentactivity_textViewPubtime
+net.bilkan.jahanname.R$id: int entrycontentactivity_textViewSource
+net.bilkan.jahanname.R$id: int entrycontentactivity_textViewTitle
+net.bilkan.jahanname.R$id: int entrycontentactivity_viewBorderMiddle
+net.bilkan.jahanname.R$id: int entrycontentactivity_viewBorderTop
+net.bilkan.jahanname.R$id: int entrylistactivity_flipperView
+net.bilkan.jahanname.R$id: int entrylistactivity_imageViewBack
+net.bilkan.jahanname.R$id: int entrylistactivity_imageViewRefresh
+net.bilkan.jahanname.R$id: int entrylistactivity_layoutTitle
+net.bilkan.jahanname.R$id: int entrylistactivity_textViewNetworkNotAvailable
+net.bilkan.jahanname.R$id: int entrylistactivity_textViewPage
+net.bilkan.jahanname.R$id: int entrylistactivity_textViewTitle
+net.bilkan.jahanname.R$id: int imageviewactivity_imageView
+net.bilkan.jahanname.R$id: int imageviewactivity_imageViewBack
+net.bilkan.jahanname.R$id: int imageviewactivity_imageViewDownload
+net.bilkan.jahanname.R$id: int imageviewactivity_layoutTitle
+net.bilkan.jahanname.R$id: int listitem_category_imageView
+net.bilkan.jahanname.R$id: int listitem_category_textView
+net.bilkan.jahanname.R$id: int mainactivity_imageViewAdd
+net.bilkan.jahanname.R$id: int mainactivity_imageViewBackground
+net.bilkan.jahanname.R$id: int mainactivity_imageViewPointer
+net.bilkan.jahanname.R$id: int mainactivity_imageViewSetting
+net.bilkan.jahanname.R$id: int mainactivity_layoutTip
+net.bilkan.jahanname.R$id: int mainactivity_pagedGrid
+net.bilkan.jahanname.R$id: int settingactivity_buttonTextSizeDown
+net.bilkan.jahanname.R$id: int settingactivity_buttonTextSizeUp
+net.bilkan.jahanname.R$id: int settingactivity_checkBoxJustTextMode
+net.bilkan.jahanname.R$id: int settingactivity_checkBoxLoadImageAutomatically
+net.bilkan.jahanname.R$id: int settingactivity_imageViewBack
+net.bilkan.jahanname.R$id: int settingactivity_layoutTitle
+net.bilkan.jahanname.R$id: int settingactivity_textViewTextSize
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor1
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor10
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor11
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor12
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor13
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor14
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor15
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor16
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor17
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor18
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor19
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor2
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor20
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor3
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor4
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor5
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor6
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor7
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor8
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundColor9
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage1
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage10
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage11
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage12
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage2
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage3
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage4
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage5
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage6
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage7
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage8
+net.bilkan.jahanname.R$id: int settingactivity_viewBackgroundImage9
+net.bilkan.jahanname.R$id: int splashactivity_imageViewBackground
+net.bilkan.jahanname.R$id: int splashactivity_imageViewIcon
+net.bilkan.jahanname.R$id: int splashactivity_imageViewName
+net.bilkan.jahanname.R$id: int welcomeactivity_imageViewBackground
+net.bilkan.jahanname.R$id: int welcomeactivity_imageViewDownload
+net.bilkan.jahanname.R$id: int welcomeactivity_imageViewRefresh
+net.bilkan.jahanname.R$id: int welcomeactivity_textView
+net.bilkan.jahanname.R$id: int welcomeactivity_viewFlipper
+net.bilkan.jahanname.R$layout: int layout_categoryactivity
+net.bilkan.jahanname.R$layout: int layout_entrycontentactivity
+net.bilkan.jahanname.R$layout: int layout_entrylistactivity
+net.bilkan.jahanname.R$layout: int layout_imageviewactivity
+net.bilkan.jahanname.R$layout: int layout_mainactivity
+net.bilkan.jahanname.R$layout: int layout_settingactivity
+net.bilkan.jahanname.R$layout: int layout_splashactivity
+net.bilkan.jahanname.R$layout: int layout_welcomeactivity
+net.bilkan.jahanname.R$layout: int listitem_category
+net.bilkan.jahanname.R$string: int app_name
+net.bilkan.jahanname.R$string: int categoryactivity_title
+net.bilkan.jahanname.R$string: int copyright
+net.bilkan.jahanname.R$string: int description_imageview
+net.bilkan.jahanname.R$string: int ga_trackingId
+net.bilkan.jahanname.R$string: int imageviewactivity_title
+net.bilkan.jahanname.R$string: int mainactivity_clicktoadd
+net.bilkan.jahanname.R$string: int networknotavailable
+net.bilkan.jahanname.R$string: int settingactivity_backgroundcolor
+net.bilkan.jahanname.R$string: int settingactivity_backgroundimage
+net.bilkan.jahanname.R$string: int settingactivity_justtextmode
+net.bilkan.jahanname.R$string: int settingactivity_loadimageautomatically
+net.bilkan.jahanname.R$string: int settingactivity_textsize
+net.bilkan.jahanname.R$string: int settingactivity_textsizedown
+net.bilkan.jahanname.R$string: int settingactivity_textsizeup
+net.bilkan.jahanname.R$string: int settingactivity_title
+net.bilkan.jahanname.R$string: int welcomeactivity_flingtostart
+net.bilkan.jahanname.SettingActivity
+net.bilkan.jahanname.SettingActivity: SettingActivity()
+net.bilkan.jahanname.SplashActivity
+net.bilkan.jahanname.SplashActivity: SplashActivity()
+net.bilkan.jahanname.WelcomeActivity
+net.bilkan.jahanname.WelcomeActivity: WelcomeActivity()
+net.bilkan.tools.StatisticsCategory: net.bilkan.tools.StatisticsCategory[] values()
+net.bilkan.tools.StatisticsCategory: net.bilkan.tools.StatisticsCategory valueOf(java.lang.String)

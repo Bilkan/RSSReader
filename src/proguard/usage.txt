@@ -1,0 +1,280 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.google.analytics.tracking.android.AdHitIdGenerator:
+    24:26:AdHitIdGenerator(boolean)
+com.google.analytics.tracking.android.AdMobInfo:
+    47:47:java.util.Map getJoinIds()
+    58:59:void setAdHitId(int)
+    62:62:int getAdHitId()
+com.google.analytics.tracking.android.AdMobInfo$AdMobKey
+com.google.analytics.tracking.android.AnalyticsConstants
+com.google.analytics.tracking.android.AnalyticsGmsCoreClient:
+    public static final int BIND_FAILED
+    public static final int REMOTE_EXECUTION_FAILED
+    private static final java.lang.String SERVICE_DESCRIPTOR
+    static final java.lang.String SERVICE_ACTION
+    private static final int BIND_ADJUST_WITH_ACTIVITY
+    public static final java.lang.String KEY_APP_PACKAGE_NAME
+com.google.analytics.tracking.android.AnalyticsStore:
+    public abstract void setDispatch(boolean)
+    public abstract void close()
+com.google.analytics.tracking.android.AnalyticsThread:
+    public abstract void setAppOptOut(boolean)
+com.google.analytics.tracking.android.CampaignTrackingReceiver
+com.google.analytics.tracking.android.CampaignTrackingService
+com.google.analytics.tracking.android.EasyTracker
+com.google.analytics.tracking.android.EasyTracker$1
+com.google.analytics.tracking.android.EasyTracker$NoopTracker
+com.google.analytics.tracking.android.EasyTracker$NotInForegroundTimerTask
+com.google.analytics.tracking.android.ExceptionReporter
+com.google.analytics.tracking.android.FutureApis:
+    17:18:private FutureApis()
+com.google.analytics.tracking.android.GAServiceManager:
+    private static final int MSG_KEY
+    84:89:GAServiceManager(android.content.Context,com.google.analytics.tracking.android.AnalyticsThread,com.google.analytics.tracking.android.AnalyticsStore,boolean)
+    147:147:com.google.analytics.tracking.android.AnalyticsStoreStateListener getListener()
+com.google.analytics.tracking.android.GAServiceProxy:
+    private static final int MAX_TRIES
+    private static final long SERVICE_CONNECTION_TIMEOUT
+    private static final long RECONNECT_WAIT_TIME
+    private static final long FAILED_CONNECT_WAIT_TIME
+    89:90:void setClock(com.google.analytics.tracking.android.Clock)
+    170:175:void createService(com.google.analytics.tracking.android.AnalyticsClient)
+    182:183:public void setIdleTimeout(long)
+com.google.analytics.tracking.android.GAThread:
+    private static final java.lang.String CLIENT_VERSION
+    private static final int MAX_SAMPLE_RATE
+    private static final int SAMPLE_RATE_MULTIPLIER
+    private static final int SAMPLE_RATE_MODULO
+    static final java.lang.String API_VERSION
+    84:92:GAThread(android.content.Context,com.google.analytics.tracking.android.ServiceProxy)
+    275:300:public void setAppOptOut(boolean)
+    547:549:void close()
+    553:553:boolean isDisabled()
+    36:36:static synthetic android.content.Context access$1100(com.google.analytics.tracking.android.GAThread)
+    36:36:static synthetic boolean access$102(com.google.analytics.tracking.android.GAThread,boolean)
+com.google.analytics.tracking.android.GAThread$3
+com.google.analytics.tracking.android.GAUsage:
+    private static final java.lang.String BASE_64_CHARS
+    100:100:static com.google.analytics.tracking.android.GAUsage getPrivateInstance()
+com.google.analytics.tracking.android.GoogleAnalytics:
+    private boolean mDebug
+    105:107:static com.google.analytics.tracking.android.GoogleAnalytics getInstance()
+    119:125:static com.google.analytics.tracking.android.GoogleAnalytics getNewInstance(android.content.Context,com.google.analytics.tracking.android.AnalyticsThread)
+    133:136:static void clearInstance()
+    145:148:public void setDebug(boolean)
+    154:155:public boolean isDebugEnabled()
+    189:192:public com.google.analytics.tracking.android.Tracker getDefaultTracker()
+    199:203:public void setDefaultTracker(com.google.analytics.tracking.android.Tracker)
+    207:213:public void closeTracker(com.google.analytics.tracking.android.Tracker)
+    240:240:void close()
+    246:246:java.lang.String getTrackingIdForAds()
+    253:256:java.lang.String getClientIdForAds()
+    276:279:public void setAppOptOut(boolean)
+    283:283:java.lang.Boolean getAppOptOut()
+    297:303:public void requestAppOptOut(com.google.analytics.tracking.android.GoogleAnalytics$AppOptOutCallback)
+com.google.analytics.tracking.android.HitBuilder:
+    15:15:HitBuilder()
+com.google.analytics.tracking.android.Log:
+    static final java.lang.String LOG_TAG
+    22:23:private Log()
+    31:32:public static void setDebug(boolean)
+    87:90:public static int eDebug(java.lang.String)
+com.google.analytics.tracking.android.MetaModel$MetaInfo:
+    102:102:java.lang.String getUrlParam()
+com.google.analytics.tracking.android.MetaModelInitializer:
+    29:30:private MetaModelInitializer()
+com.google.analytics.tracking.android.ModelFields
+com.google.analytics.tracking.android.NoopDispatcher
+com.google.analytics.tracking.android.ParameterLoader
+com.google.analytics.tracking.android.ParameterLoaderImpl
+com.google.analytics.tracking.android.PersistentAnalyticsStore:
+    static final java.lang.String BACKEND_LIBRARY_VERSION
+    static final java.lang.String HIT_ID
+    static final java.lang.String HIT_STRING
+    static final java.lang.String HIT_TIME
+    static final java.lang.String HIT_URL
+    static final java.lang.String HIT_APP_ID
+    static final java.lang.String HITS_TABLE
+    private static final java.lang.String DATABASE_FILENAME
+    128:129:public void setClock(com.google.analytics.tracking.android.Clock)
+    133:133:public com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper getDbHelper()
+    152:155:public void setDispatch(boolean)
+    159:160:void setDispatcher(com.google.analytics.tracking.android.Dispatcher)
+    401:402:void setLastDeleteStaleHitsTime(long)
+    511:516:public void close()
+    520:520:com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper getHelper()
+com.google.analytics.tracking.android.PersistentAnalyticsStore$AnalyticsDatabaseHelper:
+    553:553:boolean isBadDatabase()
+    557:558:void setBadDatabase(boolean)
+com.google.analytics.tracking.android.ServiceManager:
+    public abstract void dispatch()
+    public abstract void setDispatchPeriod(int)
+com.google.analytics.tracking.android.ServiceProxy:
+    public abstract void clearHits()
+com.google.analytics.tracking.android.SimpleNetworkDispatcher:
+    private static final java.lang.String USER_AGENT_TEMPLATE
+com.google.analytics.tracking.android.Tracker:
+    private volatile com.google.analytics.tracking.android.ExceptionParser mExceptionParser
+    static final long TIME_PER_TOKEN_MILLIS
+    static final long MAX_TOKENS
+    99:102:public void setStartSession(boolean)
+    112:123:public void setAppName(java.lang.String)
+    133:139:public void setAppVersion(java.lang.String)
+    148:151:public void setAppScreen(java.lang.String)
+    158:159:public void trackView()
+    164:170:public void sendView()
+    177:178:public void trackView(java.lang.String)
+    200:201:public void trackEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.Long)
+    225:226:public void trackTransaction(com.google.analytics.tracking.android.Transaction)
+    232:241:public void sendTransaction(com.google.analytics.tracking.android.Transaction)
+    248:249:public void trackException(java.lang.String,boolean)
+    259:264:public void sendException(java.lang.String,boolean)
+    271:272:public void trackException(java.lang.String,java.lang.Throwable,boolean)
+    284:303:public void sendException(java.lang.String,java.lang.Throwable,boolean)
+    310:311:public void trackTiming(java.lang.String,long,java.lang.String,java.lang.String)
+    322:328:public void sendTiming(java.lang.String,long,java.lang.String,java.lang.String)
+    335:336:public void trackSocial(java.lang.String,java.lang.String,java.lang.String)
+    345:350:public void sendSocial(java.lang.String,java.lang.String,java.lang.String)
+    356:358:public void close()
+    369:372:public void send(java.lang.String,java.util.Map)
+    393:394:public java.lang.String get(java.lang.String)
+    402:404:public void set(java.lang.String,java.lang.String)
+    410:411:public java.lang.String getTrackingId()
+    425:427:public void setAnonymizeIp(boolean)
+    433:434:public boolean isAnonymizeIpEnabled()
+    455:457:public void setSampleRate(double)
+    463:464:public double getSampleRate()
+    474:476:public void setUseSecure(boolean)
+    482:483:public boolean isUseSecure()
+    493:495:public void setReferrer(java.lang.String)
+    523:525:public void setCampaign(java.lang.String)
+    535:537:public void setAppId(java.lang.String)
+    540:541:public java.lang.String getAppId()
+    551:553:public void setAppInstallerId(java.lang.String)
+    556:557:public java.lang.String getAppInstallerId()
+    564:566:public void setExceptionParser(com.google.analytics.tracking.android.ExceptionParser)
+    572:573:public com.google.analytics.tracking.android.ExceptionParser getExceptionParser()
+    583:588:public void setCustomDimension(int,java.lang.String)
+    598:607:public void setCustomMetric(int,java.lang.Long)
+    618:628:public void setCustomDimensionsAndMetrics(java.util.Map,java.util.Map)
+    649:649:private static java.lang.String microsToCurrencyString(long)
+    657:667:public java.util.Map constructTransaction(com.google.analytics.tracking.android.Transaction)
+    671:681:private java.util.Map constructItem(com.google.analytics.tracking.android.Transaction$Item,com.google.analytics.tracking.android.Transaction)
+    689:694:public java.util.Map constructException(java.lang.String,boolean)
+    703:715:public java.util.Map constructRawException(java.lang.String,java.lang.Throwable,boolean)
+    723:730:public java.util.Map constructTiming(java.lang.String,long,java.lang.String,java.lang.String)
+    737:743:public java.util.Map constructSocial(java.lang.String,java.lang.String,java.lang.String)
+    748:749:void setLastTrackTime(long)
+    753:754:void setTokens(long)
+    787:788:public void setThrottlingEnabled(boolean)
+com.google.analytics.tracking.android.Tracker$SimpleModel:
+    807:811:public synchronized java.lang.String get(java.lang.String)
+com.google.analytics.tracking.android.TrackerHandler:
+    public abstract void closeTracker(com.google.analytics.tracking.android.Tracker)
+com.google.analytics.tracking.android.Transaction
+com.google.analytics.tracking.android.Transaction$1
+com.google.analytics.tracking.android.Transaction$Builder
+com.google.analytics.tracking.android.Transaction$Item
+com.google.analytics.tracking.android.Transaction$Item$Builder
+com.google.analytics.tracking.android.Utils:
+    18:18:Utils()
+    51:57:public static long safeParseLong(java.lang.String)
+    153:159:static java.lang.String hexEncode(byte[])
+    182:182:static java.lang.String getSlottedModelField(java.lang.String,int)
+com.google.android.gms.analytics.internal.Command:
+    public static final java.lang.String APPEND_VERSION
+    public static final java.lang.String APPEND_QUEUE_TIME
+    public static final java.lang.String APPEND_CACHE_BUSTER
+com.google.android.gms.analytics.internal.IAnalyticsService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_sendHit
+    static final int TRANSACTION_clearHits
+    17:19:public IAnalyticsService$Stub()
+    37:37:public android.os.IBinder asBinder()
+com.google.android.gms.analytics.internal.IAnalyticsService$Stub$Proxy:
+    87:87:public java.lang.String getInterfaceDescriptor()
+com.google.android.gms.common.util.VisibleForTesting
+com.jahanname.text.Syntax:
+    public static final java.lang.String MIDDLE_UYGHUR_CHARACTERS
+    private static final char BPAD
+    private static final char BMAX
+    private static final byte WDBEG
+    private static final byte INBEG
+    private static final byte NOBEG
+    7:7:public Syntax()
+com.jahanname.text.bidi.Bidi:
+    private static final byte BASE_RTL
+    3:3:public Bidi()
+com.jahanname.text.bidi.BidiCharacterMirrorResolver:
+    8:8:public BidiCharacterMirrorResolver()
+com.jahanname.text.bidi.BidiReference:
+    public static final byte L
+    public static final byte LRE
+    public static final byte LRO
+    public static final byte R
+    public static final byte AL
+    public static final byte RLE
+    public static final byte RLO
+    public static final byte PDF
+    public static final byte EN
+    public static final byte ES
+    public static final byte ET
+    public static final byte AN
+    public static final byte CS
+    public static final byte NSM
+    public static final byte BN
+    public static final byte B
+    public static final byte S
+    public static final byte WS
+    public static final byte ON
+    public static final byte TYPE_MIN
+    public static final byte TYPE_MAX
+    168:173:public BidiReference(byte[])
+    186:192:public BidiReference(byte[],byte)
+    935:935:public byte getBaseLevel()
+com.jahanname.text.bidi.UnicodeCharacterDataResolver:
+    10:10:public UnicodeCharacterDataResolver()
+com.jahanname.widget.TextView:
+    private static final java.lang.String NAME_SPACE
+    private static final java.lang.String DOT
+com.jahanname.widget.pageddragdropgrid.DragDropGrid:
+    92:94:public DragDropGrid(android.content.Context,android.util.AttributeSet,int)
+    97:99:public DragDropGrid(android.content.Context,android.util.AttributeSet)
+    107:111:public DragDropGrid(android.content.Context,android.util.AttributeSet,int,com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter,com.jahanname.widget.pageddragdropgrid.PagedContainer)
+    114:118:public DragDropGrid(android.content.Context,android.util.AttributeSet,com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter,com.jahanname.widget.pageddragdropgrid.PagedContainer)
+    121:125:public DragDropGrid(android.content.Context,com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter,com.jahanname.widget.pageddragdropgrid.PagedContainer)
+com.jahanname.widget.pageddragdropgrid.PagedDragDropGridAdapter:
+    public static final int AUTOMATIC
+    public abstract void printLayout()
+com.jahanname.widget.pageddragdropgrid.PagedGridAdapter:
+    145:145:public void printLayout()
+net.bilkan.jahanname.App:
+    public static final java.lang.String APP_DIRECTORY
+    public static final java.lang.String SERVER_URL
+    public static final java.lang.String PREFERENCES_CATEGORY
+    public static final java.lang.String PREFERENCES_SETTING
+    public static final java.lang.String PREFERENCES_SETTING_LOAD_IMAGE_AUTOMATICALLY
+    public static final java.lang.String PREFERENCES_SETTING_JUST_TEXT_MODE
+    public static final java.lang.String PREFERENCES_SETTING_DEFAULT_TEXT_SIZE
+    public static final java.lang.String PREFERENCES_SETTING_DEFAULT_BACKGROUND_COLOR
+    public static final java.lang.String PREFERENCES_SETTING_DEFAULT_BACKGROUND_IMAGE
+    public static final int SERVER_TIMEOUT
+    public static final int BUFFER_SIZE
+net.bilkan.jahanname.BuildConfig
+net.bilkan.jahanname.R
+net.bilkan.jahanname.R$anim
+net.bilkan.jahanname.R$attr
+net.bilkan.jahanname.R$bool
+net.bilkan.jahanname.R$color
+net.bilkan.jahanname.R$drawable
+net.bilkan.jahanname.R$id
+net.bilkan.jahanname.R$layout
+net.bilkan.jahanname.R$string
+net.bilkan.jahanname.WelcomeActivity:
+    private static final java.lang.String DEFAULT_CACHE_IMAGE
+net.bilkan.tools.Statistics:
+    47:48:public void setDebug(boolean)
+    65:66:public void dispatch()
+    124:125:public void sendEvent(net.bilkan.tools.StatisticsCategory,java.lang.String,java.lang.String)
+net.bilkan.tools.StatisticsCategory

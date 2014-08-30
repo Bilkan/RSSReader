@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BlackLoadingText">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="ButtonText">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff0f0f0</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:shadowColor">#aa000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="CopyrightText">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff555555</item>
+    </style>
+    <style name="ImageGalleryCaption">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:padding">10.0dip</item>
+    </style>
+    <style name="ImageGalleryCaptionHandle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="ImageGalleryTitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="ItemTitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="ItemMetaData">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+     <style name="ContentTitle">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0E094A</item>
+    </style>
+    <style name="ContentData">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PromoHeader">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffc62d2f</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+    </style>
+    <style name="SliderMenuItem">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="SliderMenuItem.Selected" parent="@style/SliderMenuItem">
+        <item name="android:textColor">#ff660000</item>
+    </style>
+    <style name="TweetText">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:lineSpacingExtra">3.0sp</item>
+    </style>
+    <style name="TwitterUsername">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="VideoDescription">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="VideoMetaData">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="VideoTitle">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="WhiteLoadingText">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

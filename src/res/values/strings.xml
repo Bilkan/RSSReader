@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="link">مەنبە</string>
+	<string name="about">ئۇيغۇرچە خەۋەر ئوقۇغۇچ 2.0.10 \n بىلكان ئېلېكتىرون پەن- تېخنىكا چەكلىك شىركىتى \n www.bilkan.co</string>
+    <string name="close">تاقاش</string>
+	<string name="delete">ئۆچۈرۈش</string>
+	<string name="edit">ئۆزگەرتىش</string>
+	<string name="clear">تازىلاش</string>
+	<string name="feedtitle">نامى</string>
+	<string name="address">ئادرېسى</string>
+	<string name="yes">ھەئە</string>
+	<string name="no">ياق</string>
+	<string name="setting">تەڭشەك</string>
+	<string name="fill_all">ھەممىنى تۇلۇق تولدۇرۇڭ! \n بەت ئادرىسىنىڭ خاتا بوپ قېلىشىدىن ساقلىنىڭ!</string>
+	<string name="G_not_selected_title">2G تاللانمىغان</string>
+    <string name="G_not_selected_massage">خەۋەر كۆرۈش تور ھالىتىدە 2G تاللانمىغان، قايتا تەڭشەمسىز؟</string>
+    <string name="TG_not_selected_title">3G تاللانمىغان</string>
+    <string name="TG_not_selected_massage">خەۋەر كۆرۈش تور ھالىتىدە 3G تاللانمىغان، قايتا تەڭشەمسىز؟</string>
+    <string name="WiFi_not_selected_title">WiFi تاللانمىغان</string>
+    <string name="WiFi_not_selected_massage">خەۋەر كۆرۈش تور ھالىتىدە WiFi تاللانمىغان، قايتا تەڭشەمسىز؟</string>
+    <string name="no_connection_toast">ئۈسكۈنە تورغا ئۇلانمىغان، خەۋەر مەزمۇنىنى توردىن يىڭىلىيالمايدۇ!</string>
+    <string name="G_not_selected_toast">خەۋەر كۆرۈش تور ھالىتىدە 2G تاللانمىغان، خەۋەر مەزمۇنىنى توردىن يىڭىلىيالمايدۇ!</string>
+    <string name="TG_not_selected_toast">خەۋەر كۆرۈش تور ھالىتىدە 3G تاللانمىغان، خەۋەر مەزمۇنىنى توردىن يىڭىلىيالمايدۇ!</string>
+    <string name="WiFi_not_selected_toast">خەۋەر كۆرۈش تور ھالىتىدە WiFi تاللانمىغان، خەۋەر مەزمۇنىنى توردىن يىڭىلىيالمايدۇ!</string>
+	<string name="no_network_title">تورغا ئۇلانمىغان</string>
+    <string name="no_network_massage">ئۈسكۈنە تورغا ئۇلانمىغان، تورغا ئۇلاپ قايتا سىناڭ!</string>
+    <string name="url_err">مەنبە ئادرېسىدا خاتالىق بار، خەۋەرنى توردىن چۈشۈرەلمەيدۇ.</string>
+    <string name="news_net_title">خەۋەر كۆرۈش تور ھالىتى</string>
+    <string name="picture_net_title">رەسىم كۆرۈش تور ھالىتى</string>
+    <string name="item_count">تىزىملىكتە كۆرۈنىدىغان خەۋەر سانى</string>
+    <string name="clear_items">بارلىق خەۋەرنى تازىلا</string>
+    <string name="clear_all">سانلىق مەلۇماتنى تازىلا(مەنبە ئادرېسىنىمۇ تازىلايدۇ)</string>
+    <string name="clear_all_message">سىز بارلىق خەۋەر مەنبەلىرىنى ئۆچۈرىۋەتمەكچىمۇ؟ \n ئۆچۈرمەكچى بولسىڭىز «ھەئە» كۇنۇپكىسىنى بىسىڭ. ئۆچۈرمىسىڭىز «ياق»نى بىسىپ چىكىنىپ چىقىپ كىتىڭ!</string>
+    <string name="sug_feeds">تەۋسىيە</string>
+    <string name="add_selected">تاللانغىنىنى قوشۇش</string>
+    <string name="add_all">ھەممىنى قوشۇش</string>
+    <string name="font_size_mes">خەۋەر مەزمۇنى خەت چوڭلۇقى</string>
+    <string name="update_check_label">قەرەللىك يېڭىلاش</string>
+    <string name="daily">كۈندە</string>
+    <string name="times">قېتىم</string>
+    <string name="update_time">ئەڭ مۇۋاپىق ۋاقىت</string>
+    <string name="wrong_address">توربەت ئادرېسىدا خاتالىق بار!</string>
+    <string name="wrong_content">توربەت مەزمۇنىدا خاتالىق بار!</string>
+    <string name="wrong_configuration">تور بەت قۇرۇلمىسىدا خاتالىق بار!</string>
+    <string name="can_not_conn">مەنبە بېتىگە ئۇلىنالمىدى</string>
+    <string name="updating_started">Started Updating Feeds!</string>
+    <string name="updating_now">Now Updating feeds...</string>
+    <string name="update_finish">Updating finished!</string>
+    <string name="new_items">%n new items downloaded!</string>
+    <string name="no_new_item">No new items to download!</string>
+    <string name="all_read">ھەممىگە ئوقۇلغانلىق بەلگىسى قويۇش</string>
+    <string name="app_info">ئەپ ھەققىدە</string>
+	<string name="app_name">خەۋەر ئوقۇغۇچ</string>
+	<string name="app_name_en">RSS Reader</string>
+	<string name="app_name_cn">RSS阅读器</string>
+	<string name="version">نەشرى 2.0.10</string>
+	<string name="app_info_content">بۇ مەخسۇس توردىن ئۇيغۇرچە RSS مەنبەلەرنى ئوقۇيدىغان ۋە خەۋەرلەرنى ساقلىۋالىدىغان ئەپ بولۇپ، ئۇيغۇرچە قوللايدىغان ئاندرويىد سېستىمېلىق ئۈسكۈنىلەردە نورمال ئىشلەيدۇ.</string>
+	<string name="version_new">بۇ نەشىردىكى يېڭىلىقلار:</string>
+	<string name="version_new_content">قوزغىلىش ئېكرانى قوشۇلغان.\nخەۋەر ئاچقاندا كۆرۈلىدىغان خاتالىق تۈزىتىلدى.\nئەپ ئۇچۇرى كۆزنىكى يېڭىلاندى.\nتەڭشەك كۆزنىكىدىكى خاسلىقلار سىزىق ئارقىلىق ئايرىپ قۇيۇلدى.</string>
+	<string name="copyright">ئاپتورلۇق ھوقۇقى باياناتى:</string>
+	<string name="copyright_content">بۇ بىر ھەقسىز دېتال. رۇخسەتسىز سودىغا ئىشلىتىشكە بولمايدۇ. ئاپتورلۇق ھوقۇقى بىلكان ئېلېكتىرون پەن- تېخنىكا شىركىتىگە تەئەللۇق!</string>
+	<string name="copyright_content_en">Copyright 2011 BILKAN       All Rights Reserved.\nwww.bilkan.net</string>
+    <array name="ops">
+        <item>ئۆچۈرۈش</item>
+        <item>ئۆزگەرتىش</item>
+        <item>تازىلاش</item>
+    </array>
+    
+     <string name="description_imageview">Description</string>
+    <string name="mainactivity_clicktoadd">بۇ يەرنى بېسىپ يېڭى تۈر قوشۇڭ</string>
+	
+</resources>
