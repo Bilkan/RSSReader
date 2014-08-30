@@ -1,7 +1,7 @@
 RSSReader
 =========
 
-An Android app designed to read news from Uyghur websites and blogs. 
+An Android app designed to read news from Uyghur websites and blogs. This app parses RSS feeds from a default feedlist page.
 
 Screenshots
 ---------
