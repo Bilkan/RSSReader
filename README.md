@@ -1,12 +1,26 @@
 RSSReader
 =========
 
-RSS Reader designed to read news from Uyghur websites and blogs. You can manage your feeds in different categories. News are stored on local database for offline reading.
+An Android app designed to read news from Uyghur websites and blogs. 
 
-بۇ پىروگرامما ئۇيغۇرچە بىكەتلىرىگە تىزىملىتىپ، توردىن خەۋەر ئوقۇش ئۈچۈن لايىھەلەنگەن. فىدلار مۇندەرىجىسى ۋە فىدلارنى قوشقىلى، ئۆزگەرتكىلى ۋە ئۆچۈرىۋەتكىلى بولىدۇ. فىد تىكى يېڭى خەۋەر سانىنى كۆرسىتىپ بېرىدۇ. خەۋەرلەر سانداندا ساقلىنىپ قالىدۇ. تور يوق ھالەتتىمۇ، كونا خەۋەرنى قايتا كۆرگىلى بولىدۇ. ۋاقىت بەلگىلەپ توردىن خەۋەر يېڭىلاشقا بولىدۇ. فىد ياكى مۇندەرىجىنى ئۆچۈرگەندە ئىچىدىكى خەۋەرلەرمۇ بىراقلا ئۆچۈرىلىدۇ. ياكى ھەممە خەۋەرلەرنى ئۆچۈرۈپ فىدنى ساقلاپ قېلىشقىمۇ بولىدۇ. كۆرسىتىدىغان خەۋەر سانىنى بەلگىلەپ بېرىشكە بولىدۇ.
+Screenshots
+---------
+![screenshot](screenshots/001.png)
 
-Download Link:
+![screenshot](screenshots/002.png)
 
-Google Play: https://play.google.com/store/apps/details?id=net.uyghurdev.avaroid.rssreader
+![screenshot](screenshots/003.png)
 
-Bilkan Bazar: http://bazar.bilkan.net/App.aspx?id=89
+How To Use
+---------
+Change the default feedlist and share page address to your url of choice at Configs.java.
+
+Download Link
+---------
+[Download from Google Play](https://play.google.com/store/apps/details?id=net.uyghurdev.avaroid.rssreader)
+
+[Download from Bilkan Bazar](http://bazar.bilkan.net/App.aspx?id=89)
+
+RSS 2.0 Specifications
+---------
+http://cyber.law.harvard.edu/rss/rss.html
